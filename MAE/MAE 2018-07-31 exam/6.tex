@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 6} 
+
+\begingroup
+\Large
+
+$$ \lim\limits_{n\to \infty} \left( -1 + \frac{1}{n} \right)^{n}
+= \lim\limits_{n\to \infty} \left( 1 - \frac{2n+1}{n} \right)^{n}
+= 1^{\infty}
+= $$
+
+$$ = \lim\limits_{n\to \infty} \left( 1 - \frac{2n+1}{n} \right)^{n (-\frac{n}{2n+1}) (=\frac{2n+1}{n})}
+= \lim\limits_{n\to \infty} e^{-(2n+1)}$$
+
+$\Rightarrow$ неопределенность (E)
+
+\endgroup
+\end{document}
+
+

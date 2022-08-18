@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 12} 
+
+\begingroup
+
+$$ \lim\limits_{x \to 0} \left( \frac{\sin{(1-\cos{x})}}{\ln{(\cos^2{x})}} \right)
+= \frac{0}{0} 
+= \lim\limits_{x \to 0} \left( \frac{\sin{(1-\cos{x})}\sin{x}}{\frac{1}{\cos^2{x}} 2 \cos{x} (-\sin{x})} \right)
+= \lim\limits_{x \to 0} \left( - \frac{\cos{x}\cos{(1-\cos{x})}}{2} \right)
+= - \frac{1}{2}$$
+
+\endgroup
+\end{document}

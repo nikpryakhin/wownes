@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+
+\begin{document}
+
+\textbf{№ 16} 
+
+\begingroup
+\Large
+
+$$ \lim_{n\to \infty} \left( \frac{n-\frac{1}{n}}{n+\frac{1}{n}} \right)^{n}
+= \lim_{n\to \infty} \left( \frac{n^2-1}{n^2+1} \right)^{n}
+= 1^{\infty} 
+= $$
+
+$$ = e^{\lim\limits_{n\to\infty} \frac{\ln{\frac{n^2-1}{n^2+1}}}{\frac{1}{n}}}
+= e^{\frac{0}{0}}
+= e^{\lim\limits_{n\to\infty} \frac{\frac{n^2-1}{n^2+1} \frac{2n(n^2+1)-(n^2-1)2n}{(n^2+1)^2}}{-\frac{1}{n^2}}} 
+= e^{\lim\limits_{n\to\infty} -\frac{4n}{(n^2-1)(n^2+1)}n^2}
+= $$
+
+$$ = e^{\lim\limits_{n\to\infty} -\frac{4n^3}{n^4-1}}
+= e^{\lim\limits_{n\to\infty} -\frac{4n^3}{n^4(1-\frac{1}{n^4})}} 
+= e^{0} 
+= 1$$
+
+\endgroup
+\end{document}

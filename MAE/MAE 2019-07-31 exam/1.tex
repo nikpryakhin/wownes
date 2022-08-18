@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 1} 
+
+\begingroup
+\Large
+
+$$\arcsin(\sin10) $$
+
+$$ y = \arcsin(x),\ -1\leq x \leq1, \  -\frac{\pi}{2} \leq y \leq \frac{\pi}{2} $$
+т.к. 10 радиан $\notin [-\frac{\pi}{2};\frac{\pi}{2}]$, то
+
+$$ \sin{10} = \sin(10=2\pi)$$
+но $10-2\pi \notin [-\frac{\pi}{2};\frac{\pi}{2}]$ \\
+$\sin{a} = \sin(\pi - a)$ - формула привидения
+
+$$ \sin(10 - 2\pi) 
+= \sin(\pi - (10 - 2\pi))
+= \sin(3\pi - 10)$$
+
+где $ 3\pi - 10 \in [-\frac{\pi}{2};\frac{\pi}{2}]$
+
+$$ \Rightarrow \arcsin{10} 
+= \arcsin(\sin(3\pi - 10))
+= 3\pi - 10$$
+
+
+\endgroup
+\end{document}

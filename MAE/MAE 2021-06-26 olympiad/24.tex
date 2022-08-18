@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 24}
+\\
+\\ also look MAE 2021-06-26 olympiad №24
+
+$$ \lim_{x\to+\infty} \left( {\frac{a^x+b^x}{2}}\right)^{\frac{1}{x}} 
+= \lim_{x\to+\infty} \underbrace{\frac{1}{2^\frac{1}{x}}}_{1} \lim_{x\to+\infty}\left( {a^x+b^x}\right)^{\frac{1}{x}} 
+= \lim_{x\to+\infty}\left( {a^x+b^x}\right)^{\frac{1}{x}}
+= $$
+
+\Large
+$$ = e^{\lim\limits_{x \to+\infty}\ln\left( {a^x+b^x}\right)^{\frac{1}{x}}} 
+= e^{\lim\limits_{x \to+\infty} \frac{\ln\left( {a^x+b^x}\right)}{x}} 
+= e^{\frac{\infty}{\infty}} $$
+
+$$ (*) \left(\frac{\ln\left( {a^x+b^x}\right)}{x}\right)^\prime 
+=  \left( \frac{a^x\ln{a}+b^x\ln{b}}{a^x+b^x} \right) 
+= \lim\limits_{x \to+\infty} \left( \frac{a^x(\ln{a}+\frac{b^x}{a^x}\ln{b})}{a^x(1+\frac{b^x}{a^x})} \right) = $$
+
+$$ = \lim\limits_{x \to+\infty} \left( \frac{\ln{a}+\frac{b^x}{a^x}\ln{b}}{1+\frac{b^x}{a^x}} \right) $$
+
+$$ \frac{b^x}{a^x}, x\to\infty
+\left[
+\begin{array}{lll}
+a>b \rightarrow 0 \\
+a<b \rightarrow \infty, \ put \ out \ of \ brackets \ b^x \\
+a=b \rightarrow a \ or \ b
+\end{array}
+\right] 
+\Rightarrow$$
+
+$$
+e^{ \lim\limits_{x \to+\infty} \left( \frac{\ln{a}+\frac{b^x}{a^x}\ln{b}}{1+\frac{b^x}{a^x}} \right)}
+= e^{\ln{a}}
+= a $$
+$$ \Rightarrow max\left\{
+  \begin{array}{ccc} 
+  a, b 
+  \end{array}
+\right\} $$
+
+\end{document}

@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+
+\begin{document}
+
+\textbf{№ 4} 
+
+\begingroup
+\Large
+
+$$ \lim_{x\to 0} \left(2-\cos^2(x)\right)^{\frac{1}{x-\sin(x)}}
+= \lim_{x\to 0} \left(1+\sin^2(x)\right)^{\frac{1}{x-\sin(x)}}
+= 1^{\infty} 
+= $$
+
+$$ = \lim_{x\to 0} \left(1+\sin^2(x)\right)^{\frac{1}{x-\sin(x)}\frac{1}{\sin^2x}\frac{\sin^2x}{1}}
+= e^{\lim\limits_{x \to 0}\frac{\sin^2x}{x-\sin{x}}} 
+= e^{\frac{0}{0}}
+= e^{\lim\limits_{x \to 0}\frac{2\sin{x}\cos{x}}{1-\cos{x}}} 
+= $$
+
+$$ = e^{\lim\limits_{x \to 0}\frac{\sin{2x}}{1-\cos{x}}}
+= e^{\frac{0}{0}}
+= e^{\lim\limits_{x \to 0}\frac{2\cos{2x}}{\sin{x}}} $$
+
+$\Rightarrow$ неопрделенность
+
+\endgroup
+\end{document}

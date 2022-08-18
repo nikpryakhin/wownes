@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 10} 
+
+\begingroup
+
+\Large
+
+$$ \lim\limits_{x \to 0+} \int_{x}^{1} \frac{t-\ln(t+1)}{t^2} \,dt $$
+
+\begin{enumerate}
+\item Решаем интеграл
+\\
+$$ \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} =
+   \begin{Vmatrix} f = t - \ln(t+1)      & g = -\frac{1}{t} \\
+                  df = 1 - \frac{1}{t+1} & dg = \frac{1}{t^2}  \end{Vmatrix} =$$
+
+$$ = -\frac{t - \ln(t+1)}{t} - \int_{x}^{1} -\frac{1}{t} \left( 1 - \frac{1}{t+1} \right) dt = $$
+
+$$ = -\frac{t - \ln(t+1)}{t} + \int_{x}^{1} \frac{1}{t+1} dt 
+= -\frac{t - \ln(t+1)}{t} \bigg\rvert_{x}^{1} +\ln(\left|t+1\right|) \bigg\rvert_{x}^{1} = $$
+
+$$ = -\frac{1 - \ln(1+1)}{1} -\frac{x - \ln(x+1)}{x} +\ln(\left|1+1\right|) +\ln(\left|x+1\right|)
+= $$
+
+$$ = 2\ln{2} - 1 -\frac{x - \ln(x+1)}{x} + \ln(x+1) $$
+
+\item Находим предел
+$$ \lim\limits_{x \to 0+} \left( 2\ln{2} - 1 -\frac{x - \ln(x+1)}{x} + \ln(x+1) \right)
+= 2\ln{2} - 1 = \ln{4} - 1 $$
+
+\end{enumerate}
+\endgroup
+\end{document}

@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 18} 
+
+
+$$ \lim_{n\to\infty} \left(\frac{1}{\sqrt{n^2+1}} + \frac{1}{\sqrt{n^2+2}} + ... + \frac{1}{\sqrt{n^2+(n+1)}}\right) = $$
+
+$$ \lim_{n\to\infty} \left(\frac{1}{n\sqrt{1+\frac{1}{n^2}}} + \frac{1}{n\sqrt{1+\frac{2}{n^2}}} + ... + \frac{1}{n\sqrt{1+\frac{n+1}{n^2}}}\right) = $$
+
+$$ \lim_{n\to\infty} \frac{1}{n}\left(\frac{1}{\sqrt{1+\frac{1}{n^2}}} + \frac{1}{\sqrt{1+\frac{2}{n^2}}} + ... + \frac{1}{\sqrt{1+\frac{n+1}{n^2}}}\right) = $$
+
+$$ \lim_{n\to\infty} \frac{1}{n}(n+1) 
+= \lim_{n\to\infty} \left(1 + \frac{1}{n}\right)
+= 1 $$
+
+\end{document}

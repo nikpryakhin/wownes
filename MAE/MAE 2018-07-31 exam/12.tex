@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 12} 
+
+\begingroup
+\Large
+
+$$ \lim\limits_{x\to 0} \left( \sqrt{\cos{x}} + \sin{x} \right)^{\frac{1}{x}}
+= 1^{\infty}
+= e^{\lim\limits_{x\to 0} \frac{\ln {(\sqrt{\cos{x}} + \sin{x})}}{x} }
+= $$
+
+\begin{enumerate}
+\item Решаем предел - находим производную
+$$ \lim\limits_{x\to 0} \frac{1}{\sqrt{\cos{x}} + \sin{x}} \left( \frac{-\sin{x}}{2\sqrt{\cos{x}}} + \cos{x} \right)
+= 1 \left(\frac{1}{2} \times 0 + 1 \right)
+= 1$$
+
+\item Подставляем в степень e
+$$e^{1}$$
+
+\end{enumerate}
+\endgroup
+\end{document}
+
+

@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 2} 
+\\
+\\ also look MAE 2021-04-24 olympiad № 3
+
+\begingroup
+\Large
+
+$$ \lim\limits_{x \to +\infty} \left( 1+\sh{x}-\sin{x} \right)^{\frac{1}{x^3}}
+= e^{\lim\limits_{x \to +\infty} \ln \left( 1+\sh{x}-\sin{x} \right)^{\frac{1}{x^3}}} 
+= e^{\lim\limits_{x \to +\infty} \left( \frac{\ln(1+\sh{x}-\sin{x})}{x^3} \right)} 
+= $$
+
+$$ = \begin{Vmatrix} \sh{x} = \frac{e^x-e^{-x}}{2} \end{Vmatrix} 
+= $$
+
+$$ = e^{\lim\limits_{x \to 0} \frac{\ln{(\sh{x}-\sin{x})}}{x^3}}
+= e^{\lim\limits_{x \to 0}\frac{\ln{(\frac{1}{2}(e^x-e^{-x})-\sin{x})}}{x^3}}
+= e^{\frac{0}{0}} $$
+\\
+В связи с тем, что
+$ -1 \leq \sin{x} \leq 1 $ или \\ 
+$ \sin{x} = -1 \leq \sin{x} = 0 \leq \sin{x} = 1 $
+\\
+Из этого следует, что предел равняется равняется 0
+\\
+$\Rightarrow$ $e^{0} = 1$
+
+\endgroup
+\end{document}
