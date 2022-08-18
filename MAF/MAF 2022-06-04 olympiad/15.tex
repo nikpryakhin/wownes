@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 15} 
+\Large
+
+$$ \int_{0}^{\frac{\pi}{2}} \sqrt{1+\cos{x}}dx = $$
+
+Формула: $ \cos^2x = \frac{1+\cos{2x}}{2}$ или $2\cos^2{\frac{x}{2}} = 1+\cos{x}$
+
+$$ = \int_{0}^{\frac{\pi}{2}} \sqrt{2} \cos{\frac{x}{2}}dx
+= \begin{vmatrix}   u  = \frac{x}{2} \\ 
+                    du = \frac{1}{2} dx \\
+                    dx = 2du \end{vmatrix}
+= 2\sqrt{2} \int_{0}^{\frac{\pi}{2}}\cos{u} \ du 
+= 2\sqrt{2} \sin{\frac{x}{2}} \bigg\vert_{0}^{\frac{\pi}{2}}
+= $$
+
+$$ = 2\sqrt{2} \left( \sin{\frac{\pi}{4}} - 0 \right)
+= 2\sqrt{2} \times \frac{\sqrt{2}}{2}
+= 2$$
+
+\end{document}

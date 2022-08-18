@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 15} 
+
+$$ \int \frac{\ln{x}}{2\sqrt{x}} \ dx 
+= \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} =
+  \begin{Vmatrix} f = \ln{x} &  g = 2\sqrt{x} \\
+                 df = \frac{1}{x}dx  & dg = \frac{1}{\sqrt{x}} \ dx \end{Vmatrix} 
+= \frac{1}{2} \left( \ln{x} \times 2\sqrt{x} - 2\int \sqrt{x} \ \frac{1}{x} \ dx \right)
+= $$
+
+$$ =  \frac{1}{2} \left( \ln{x} \times 2\sqrt{x} - 4\sqrt{x} \right)
+= \ln{x} \times \sqrt{x} - 2\sqrt{x}
+= \sqrt{x} \left( \ln{x} - 2 \right)$$
+
+\end{document}

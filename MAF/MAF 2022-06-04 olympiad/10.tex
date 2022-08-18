@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 10} 
+
+\begingroup
+
+\Large
+
+$$ \int \frac{2x+3}{e^x} \,dx $$
+
+$$ \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} =
+   \begin{Vmatrix} f = 2x+3 &  g = -e^{-x} \\
+                  df = 2dx  & dg = \int dg = \int e^{-x} dx \end{Vmatrix} = $$
+
+$$ = \int \frac{2x+3}{e^x} \,dx = -(2x+3)e^{-x} - \int -2 e^{-x}dx = $$
+
+$$ = \begin{vmatrix} u = -x \\ 
+                    du = -dx \\
+                    dx = - du \end{vmatrix} 
+= -e^{-x}(2x+3) -2 \int e^{u}du 
+= -e^{-x}(2x+3) -2e^{-x}
+= $$
+
+$$ = e^{-x}(-(2x+3)-2)
+= -\frac{2x+5}{e^{x}} $$
+
+\endgroup
+\end{document}

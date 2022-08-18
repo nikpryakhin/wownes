@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 8} 
+
+\begingroup
+\Large
+
+$$ ((\tg{x})^{x})'
+= \left( e^{\ln{(\tg{x})^{x}}} \right)'
+= \left( e^{x \ln{(\tg{x})}} \right)'
+= e^{x \ln{(\tg{x})}} \left( x \ln{(\tg{x})} \right)'
+= $$
+
+$$ = e^{x \ln{(\tg{x})}} \left( \ln{(\tg{x})} + x \times \frac{1}{\tg{x}} \times \frac{1}{\cos^2{x}} \right)
+= (\tg{x})^{x} \left( \ln{(\tg{x})} + \frac{x}{\tg{x} \cos^2{x}}\right)
+= $$
+
+$$ = \frac{(\tg{x})^{x}}{\tg{x}} \left( \tg{x}\ln{(\tg{x})} + \frac{x}{\cos^2{x}}\right)
+= (\tg{x})^{x-1} \left( \tg{x}\ln{(\tg{x})} + \frac{x}{\cos^2{x}}\right)$$
+
+\endgroup
+\end{document}
+
+

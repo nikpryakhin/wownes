@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 17} 
+
+$$ \int_{-1}^{1} x^5 \sqrt{1+x^6} dx 
+ = \begin{vmatrix}  u  = 1+x^6 \\ 
+                    du = 6x^5 \ dx \end{vmatrix}
+= \frac{1}{6} \int \sqrt{u} \ du
+= \frac{1}{6} \times \frac{2}{3} \sqrt{u^3} \bigg\vert_{-1}^{1}
+= \frac{1}{9} \sqrt{(1+x^6)^3} \bigg\vert_{-1}^{1}
+= $$
+
+$$ = \frac{1}{9} (\sqrt{8} - \sqrt{8}) 
+= 0 $$
+
+\end{document}

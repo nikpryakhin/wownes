@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 16} 
+
+$$ \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}} \frac{\tg^3{x}+\cos{x}\sin{x}}{1+\tg^2{x}}dx 
+= $$
+
+Формула: $ 1+\tg^2{x} = \frac{1}{\cos^2{x}}$
+
+$$ = \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}} \frac{\sin^3{x}+\cos^4{x}\sin{x}}{\cos{x}}dx
+= \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}} \frac{\sin{x}(\sin^2{x} + \cos^4{x})}{\cos{x}}dx 
+= \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}} \frac{\sin{x}(\cos^4{x} - \cos^2{x} + 1)}{\cos{x}}dx
+= $$
+
+
+$$ = \begin{vmatrix}    u  = \cos{x} \\ 
+                        du = \sin{x} dx \end{vmatrix}
+=  -\int \frac{u^4-u^2+1}{u} \ du
+= -\int u^3 \ du + \int u \ du - \int \frac{1}{u} \ du
+= $$
+
+$$ = -\frac{u^4}{4} + \frac{u^2}{2} - \ln{u}
+= \left( -\frac{\cos^4{x}}{4} + \frac{\cos^2{x}}{2} - \ln{\cos{x}} \right) \bigg\vert_{-\frac{\pi}{4}}^{\frac{\pi}{4}}
+= $$
+
+так как функция $\cos{x}$ четная $f(-x) = f(x)$, то все это равно нулю
+
+$$ = \left( -\frac{(\frac{\sqrt{2}}{2})^4}{4} + \frac{(\frac{\sqrt{2}}{2})^2}{2} - \ln{\frac{\sqrt{2}}{2}} \right) - \left( -\frac{(\frac{\sqrt{2}}{2})^4}{4} + \frac{(\frac{\sqrt{2}}{2})^2}{2} - \ln{\frac{\sqrt{2}}{2}} \right)
+= 0$$
+
+
+
+\end{document}

@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 1} 
+
+$$ \int_{1}^{2} \frac{\ln{x}}{x}dx 
+ = \begin{vmatrix}  u  = \ln{x} \\ 
+                    du = \frac{1}{x} dx \end{vmatrix}
+= \int_{1}^{2} u \ du
+= \frac{u^2}{2} \bigg\vert_{1}^{2}
+= \frac{\ln^2{x}}{2} \bigg\vert_{1}^{2} 
+= \frac{\ln^2{2}}{2} $$
+
+\end{document}
