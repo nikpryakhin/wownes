@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 12} 
+\\
+\\ also look MAF 2018-03-03 olympiad № 20
+\\ also look MAE 2021-04-24 olympiad № 21
+\\ also look MAE 2021-07-31 exam № 12
+
+$$\sum_{n=1}^{\infty} \frac{1}{25n^2-5n-6}$$
+
+\begin{enumerate}
+
+\item Transform the denominator
+
+$$D = (-5)^2 + (-4)\times25\times(-6)=625=25^2$$
+
+$$n_1 = \frac{5+25}{50}=\frac{3}{5}$$
+$$n_2 = \frac{5-25}{50}=-\frac{2}{5}$$
+
+$$\sum_{n=1}^{\infty} \frac{1}{25n^2-5n-6} = \sum_{n=1}^{\infty} \frac{1}{25(n+\frac{2}{5})(n-\frac{3}{5})} = \sum_{n=1}^{\infty} \frac{1}{(5n+2)(5n-3)}$$
+
+\item Divide the denominator
+
+$$\frac{1}{(5n+2)(5n-3)} = \frac{A}{5n+2} + \frac{B}{5n-3} 
+= \frac{A(5n-3)+B(5n+2)}{(5n+2)(5n-3)} 
+= \frac{5An-3A+5Bn+2B}{(5n+2)(5n-3)}$$
+
+$$5An-3A+5Bn+2B = 1$$
+
+$$
+\left\{
+  \begin{array}{ccc}
+    5A + 5B = 0 \\
+    -3A+2B = 1 \\
+  \end{array}\Leftrightarrow
+\left\{
+  \begin{array}{ccc}
+    A = -B \\
+    5B = 1 \\
+  \end{array}\Leftrightarrow
+\left\{
+  \begin{array}{ccc}
+    A = =\frac{1}{5} \\
+    B = \frac{1}{5} \\
+  \end{array}
+$$
+
+$$ \sum_{n=1}^{\infty} \frac{1}{(5n+2)(5n-3)} = 
+\sum_{n=1}^{\infty} \left(\frac{1}{5(5n-3)} - \frac{1}{5(5n+2)}\right) $$
+
+\item Find the sum of the series
+
+$$ \sum_{n=1}^{\infty} \left(\frac{1}{5(5n-3)} - \frac{1}{5(5n+2)}\right) 
+= S_n = a_1+a_2+...+a_{n-1}+a_n = $$
+$$ = \frac{1}{10} - \underbrace{\frac{1}{35} + \frac{1}{35}}_{0} - \underbrace{\frac{1}{60} + \frac{1}{60}}_{0} - \frac{1}{85} + ..... - \frac{1}{5(5n+2)} = \frac{1}{10} - \frac{1}{5(5n+2)}$$
+
+\item Find the limit
+$$S = \lim_{n\to\infty} S_n 
+= \lim_{n\to\infty} \left(\frac{1}{10} - \underbrace{\frac{1}{5(5n+2)}}_{0}\right) 
+= \frac{1}{10} $$
+
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+\begin{enumerate}
+
+\textbf{№ 24} 
+\\
+also look MAE 2021-07-31 exam №2
+
+\begingroup
+\Large
+
+$$ \lim_{x\to 1} \left(x^{\tan{\frac{\pi x}{2}}}\right) 
+= 1^{\infty} 
+= e^{\lim\limits_{x \to 1}\ln(x^{\tan{\frac{\pi x}{2}}})} 
+= e^{\lim\limits_{x \to 1}\tan{\frac{\pi x}{2}}\ln(x)} 
+= e^{\lim\limits_{x \to 1}\frac{\sin{\frac{\pi x}{2}}\ln(x)}{\cos{\frac{\pi x}{2}}}}
+= $$
+
+$$ = e^{\frac{0}{0}}
+= e^{\lim\limits_{x \to 1}\sin{\frac{\pi x}{2}}\lim\limits_{x \to 1}\frac{\ln(x)}{\cos{\frac{\pi x}{2}}}} 
+= e^{\lim\limits_{x \to 1}\frac{\frac{1}{x}}{-\sin{\frac{\pi x}{2}}\frac{\pi}{2}}} 
+= e^{\frac{1}{-\frac{\pi}{2}}}
+= e^{-\frac{2}{\pi}} $$
+
+\endgroup
+
+\end{enumerate}
+\end{document}

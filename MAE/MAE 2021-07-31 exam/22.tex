@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 22} 
+
+\begingroup
+
+дополнительная информация на \href{https://www.youtube.com/watch?v=PM73W4kpRL8}{\underline{youtube}}
+
+% \Large
+
+$$ \lim_{n\to \infty} \sum_{k=1}^{n} \frac{n}{k^2+n^2} $$
+
+\begin{enumerate}
+\item Делаем шаг разбиения на отрезке [0,1] на n равных частей
+
+$ \Delta{x}=\frac{1}{n}$ - шаг разбиения
+
+\item Формула интегрирования
+
+$$ \int_{a}^{b} f(x) \,dx
+= \lim\limits_{n \to \infty} \sum_{k=1}^{n} f(\xi_k)\Delta{x}_k$$
+
+\item Интегрируем
+
+$$ \lim\limits_{n \to \infty} \sum_{k=1}^{n} \frac{1}{n}\left( \frac{n^2}{k^2+n^2} \right)
+= \lim\limits_{n \to \infty} \sum_{k=1}^{n} \underbrace{\frac{1}{n}}_{\Delta{x}} 
+\underbrace{\left( \frac{1}{\frac{k^2}{n^2} + 1} \right)}_{f(\xi_k)}
+= \int_{0}^{1} \frac{1}{1+x^2} \,dx
+= \arctan{x} \bigg\rvert_{0}^{1}
+= \frac{\pi}{4}
+$$
+
+\end{enumerate}
+\endgroup
+\end{document}

@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 6} 
+
+\begingroup
+
+\Large
+
+$$ \lim\limits_{n \to \infty} \int_{a_n}^{1} (\ln{x})^2 \,dx 
+= \begin{Vmatrix} a_n = \frac{1}{2n+n^2} \end{Vmatrix} $$
+
+\begin{enumerate}
+\item Решаем интеграл
+\\
+$$ \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} =
+   \begin{Vmatrix} f = (\ln{x})^2      & g = x \\
+                  df = \frac{2}{x} \ln{x} \ dx & dg = \ dx  \end{Vmatrix} =$$
+
+$$ = x (\ln{x})^2 - \int \frac{2\ln{x}}{x} x \ dx 
+= x (\ln{x})^2 - 2 \int \ln{x} \ dx 
+= $$
+
+$$ = \left( x (\ln{x})^2 - 2x \ln{x} + 2x \right) \bigg\rvert_{a_n}^{1} 
+= \left(0 - 0 + 2 \right) - \left( a_n (\ln{a_n})^2 -2a_n \ln{a_n} +2a_n \right) $$
+
+\item Находим предел
+$$ \lim\limits_{n \to \infty} \left(2 -  a_n (\ln{a_n})^2 + 2a_n \ln{a_n} - 2a_n \right)
+= 2$$
+
+\end{enumerate}
+\endgroup
+\end{document}

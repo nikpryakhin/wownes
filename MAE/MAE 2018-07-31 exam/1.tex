@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 1} 
+
+\begingroup
+\Large
+
+$$ \lim\limits_{n\to \infty} \left( \frac{1}{n \sqrt[4]{n}} \int_{1}^{n} \ln{x} dx \right)
+= $$
+
+\begin{enumerate}
+\item Решаем интеграл
+$$  \int_{1}^{n} \ln{x} dx
+= \left( x\ln{x} - x\right)  \bigg\rvert_{1}^{n}
+= n\ln{n} - n + 1$$
+
+\item Найдем предел
+$$ \lim\limits_{n\to \infty} \left( \frac{1}{n^{\frac{5}{4}}} (n\ln{n} - n + 1) \right)
+= \frac{\ln{n}}{n^{\frac{1}{4}}} - \frac{1}{n^{\frac{1}{4}}} + \frac{1}{n^{\frac{5}{4}}} 
+= 0$$
+
+\end{enumerate}
+\endgroup
+\end{document}
+
+

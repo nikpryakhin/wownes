@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+
+\begin{document}
+
+\textbf{№ 17} 
+
+also look MAE 2019-07-31 exam
+
+\begingroup
+% \Large
+
+$$ \lim_{n\to \infty} \left( \sqrt[3]{(n+a_1)(n+a_2)(n+a_3)} - n \right) 
+= $$
+
+\begin{enumerate}
+\item First way to solve
+
+$$ \begin{Vmatrix} n=\frac{1}{z}, z=\frac{1}{n}, n\to \infty \ \Rightarrow z\to\frac{1}{\infty}=0 \end{Vmatrix} $$
+
+$$ \lim_{z\to 0} \left(\frac{\sqrt[3]{(a_1z+1)(a_2z+1)(a_3z+1)} - 1}{z} \right) 
+= \frac{0}{0}
+= $$
+
+$$ = \lim_{z\to 0} \left( \frac{a_1\sqrt[3]{(a_2z+1)(a_3z+1)}}{3\sqrt[3]{(a_1z+1)}} 
++ \frac{a_2\sqrt[3]{(a_1z+1)(a_3z+1)}}{3\sqrt[3]{(a_2z+1)}} 
++ \frac{a_3\sqrt[3]{(a_1z+1)(a_2z+1)}}{3\sqrt[3]{(a_3z+1)}} \right)
+= $$
+
+$$ = \frac{a_1+a_2+a_3}{3} $$
+
+\item Second way to solve
+MAE 2019-07-31 exam
+
+
+\end{enumerate}
+\endgroup
+\end{document}

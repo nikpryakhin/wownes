@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 14} 
+
+\begingroup
+\Large
+
+$$ \lim\limits_{n\to \infty} \left( \frac{\sqrt[n]{a} + \sqrt[n]{b} + \sqrt[n]{c}}{3} \right)^{n}
+= \lim\limits_{n\to \infty} \left( 1 + \frac{\sqrt[n]{a} + \sqrt[n]{b} + \sqrt[n]{c} - 3}{3} \right)^{n}
+= 1^{\infty} $$
+
+$$ = \lim\limits_{n\to \infty} \left( 1 + \frac{\sqrt[n]{a} + \sqrt[n]{b} + \sqrt[n]{c} - 3}{3} \right)^{n \times \frac{\sqrt[n]{a} + \sqrt[n]{b} + \sqrt[n]{c} - 3}{3} \times \frac{3}{\sqrt[n]{a} + \sqrt[n]{b} + \sqrt[n]{c} - 3}} 
+= $$
+
+$$ = e^{\lim\limits_{n\to \infty} \frac{\sqrt[n]{a} + \sqrt[n]{b} + \sqrt[n]{c} - 3}{\frac{3}{n}}}
+$$
+
+\begin{enumerate}
+\item Решаем предел
+$$ \lim\limits_{n\to \infty} \frac{\sqrt[n]{a} + \sqrt[n]{b} + \sqrt[n]{c} - 3}{\frac{3}{x}}
+= \lim\limits_{n\to \infty} \frac{ -\frac{1}{n^2}\sqrt[n]{a}\ln{a} + -\frac{1}{n^2}\sqrt[n]{b}\ln{b} + -\frac{1}{n^2}\sqrt[n]{c}\ln{c} }{-\frac{3}{n^2}}$$
+
+$$ \frac{\ln{a} + \ln{b} + \ln{c}}{3}
+$$
+
+\item Подставляем в степень e
+$$ e^{\frac{\ln{a} + \ln{b} + \ln{c}}{3}}
+= e^{\frac{\ln{abc}}{3}}
+= e^{\ln{(abc)}^{\frac{1}{3}}}
+= (abc)^{\frac{1}{3}}$$
+
+\end{enumerate}
+\endgroup
+\end{document}

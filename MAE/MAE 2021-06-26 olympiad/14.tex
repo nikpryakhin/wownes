@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 14} 
+
+\begingroup
+\Large
+
+$$ \lim_{x\to 1} \left( \frac{x^2}{x+1} \right)^{\ctg{\pi x}}
+= 1^{\infty} 
+= e^{\lim\limits_{x\to 1} \ln \left( \frac{x^2}{x+1} \right)^{\ctg{\pi x}} }
+= = e^{\lim\limits_{x\to 1} \frac{\ln \left( \frac{x^2}{x+1} \right)}{\frac{1}{{\ctg{\pi x}}}} } $$
+\\
+Производную взять не можем, так как число деленное на $\infty$.\\
+Поэтому у данного уравнения решение будет $\infty$
+
+
+\endgroup
+\end{document}

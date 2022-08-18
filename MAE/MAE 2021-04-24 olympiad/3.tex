@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 3} 
+\\
+\\ also look MAE 2021-06-26 olympiad № 2
+
+\begingroup
+
+\Large
+
+$$ = \lim\limits_{x \to 0} \left( 1+\sh{x}-\sin{x} \right)^{\frac{1}{x^3}}
+= 1^{\infty}
+= \lim\limits_{x \to 0} \left( 1+\sh{x}-\sin{x} \right)^{\frac{1}{x^3}\frac{1}{\sh{x}-\sin{x}}\frac{\sh{x}-\sin{x}}{1}} $$
+
+$$ = e^{\lim\limits_{x \to 0}\frac{\sh{x}-\sin{x}}{x^3}}
+= \begin{Vmatrix} \sh{x} = \frac{e^x-e^{-x}}{2} \end{Vmatrix} 
+= e^{\lim\limits_{x \to 0}\frac{\frac{1}{2}(e^x-e^{-x})-\sin{x}}{x^3}}
+= e^{\frac{0}{0}} 
+= $$
+
+$$ = e^{\lim\limits_{x \to 0}\frac{\frac{1}{2}(e^x+e^{-x})-\cos{x}}{3x^2}}
+= e^{\frac{0}{0}}
+= e^{\lim\limits_{x \to 0}\frac{\frac{1}{2}(e^x-e^{-x})+\sin{x}}{6x}}
+= e^{\frac{0}{0}}
+= $$
+
+$$ = e^{\lim\limits_{x \to 0}\frac{\frac{1}{2}(e^x+e^{-x})+\cos{x}}{6}}
+= e^{\frac{1}{3}}
+$$
+
+\endgroup
+\end{document}

@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+
+\begin{document}
+
+\textbf{№ 3} 
+
+\begingroup
+\Large
+
+$$ \lim_{x\to +\infty} \left( \frac{2}{\pi} \arctg{x} \right)^{x}
+= 1^{\infty} 
+= e^{\lim\limits_{x\to +\infty} \ln{\left( \frac{2}{\pi} \arctg{x} \right)^{x}}}
+= $$
+
+$$ = e^{\lim\limits_{x\to +\infty} \frac{ \ln \left({\frac{2}{\pi}}\arctg{x} \right)}{\frac{1}{x}}}
+=  
+\begin{Vmatrix}
+\lim\limits_{x\to +\infty} \arctg(x) = \frac{\pi}{2}
+\end{Vmatrix}
+= e^{\frac{0}{0}}
+= e^{\lim\limits_{x\to +\infty} \frac{\left( \ln{\frac{2}{\pi}} + \ln{\arctg{x}} \right)}{\frac{1}{x}}} 
+= $$
+
+$$ = e^{\lim\limits_{x\to +\infty} \frac{\frac{1}{\arctg(x)} \frac{1}{1+x^2}}{-\frac{1}{x^2}}}
+= e^{\lim\limits_{x\to +\infty} -\frac{x^2}{\arctg(x)(1+x^2)}}
+= e^{\lim\limits_{x\to +\infty} -\frac{x^2}{x^2 \arctg(x)(1+\frac{1}{x^2})}}
+= $$
+
+$$ = e^{\lim\limits_{x\to +\infty} -\frac{1}{\arctg(x)(1+\frac{1}{x^2})}} 
+= e^{-\frac{1}{\frac{\pi}{2}}}
+= e^{-\frac{2}{\pi}} $$
+
+\endgroup
+\end{document}

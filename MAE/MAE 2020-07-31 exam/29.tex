@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 29} 
+
+\begingroup
+\Large
+
+$$ \lim\limits_{t\to 0} \left( \int_{0}^{1} (1+x)^t dx \right)^{\frac{1}{t}}
+= $$
+
+\begin{enumerate}
+\item Решаем интеграл
+$$ \int_{0}^{1} (1+x)^t dx
+= \frac{(1+x)^{t+1}}{t+1}  \bigg\rvert_{0}^{1}
+= \frac{2^{t+1}}{t+1} - \frac{1}{t+1}
+= \frac{2^{t+1} - 1}{t+1}$$
+
+\item Найдем предел
+$$ \lim\limits_{t\to 0} \left( \frac{2^{t+1} - 1}{t+1} \right)^{\frac{1}{t}}
+= 1^{\infty}
+= e^{\lim\limits_{t\to 0} \frac{\ln \left( \frac{2^{t+1} - 1}{t+1} \right)}{t} }
+= $$
+
+\item Найдем только предел (без степени e)
+$$ \lim\limits_{t\to 0} \frac{(t+1) (\ln{2}(t+1)2^{t+1} - 2^{t+1} + 2^{t+1} + 1)}{(2^{t+1} - 1)(t+1)^2}
+= 2\ln{2}-1$$
+
+\item Подставляем решение в степень e
+$$ e^{2\ln{2}-1}
+= e^{\ln{4} - 1} 
+= \frac{4}{e}$$
+\\
+\\
+II способ: после п.2 решать нужно по формуле $\lim\limits_{t\to \infty} \left( 1+\frac{1}{x} \right)^{x} = e$
+
+\end{enumerate}
+\endgroup
+\end{document}

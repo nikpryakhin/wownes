@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 17} 
+
+\begingroup
+
+$$ \lim\limits_{x\to +\infty} \left( \sqrt{x^4+x^2\sqrt{x^4+1}} - \sqrt{2x^4} \right)
+=  \lim\limits_{x\to +\infty} \left( \frac{(\sqrt{x^4+x^2\sqrt{x^4+1}} - \sqrt{2x^4})(\sqrt{x^4+x^2\sqrt{x^4+1}} + \sqrt{2x^4})}{\sqrt{x^4+x^2\sqrt{x^4+1}} + \sqrt{2x^4}} \right)
+= $$
+
+$$ \lim\limits_{x\to +\infty} \frac{x^4+x^2\sqrt{x^4+1} - 2x^4}{\sqrt{x^4+x^2\sqrt{x^4+1}} + \sqrt{2x^4}}
+= \lim\limits_{x\to +\infty} \frac{x^2\sqrt{x^4+1} - x^4}{\sqrt{x^4+x^2\sqrt{x^4+1}} + \sqrt{2x^4}}
+= $$
+
+$$ = \lim\limits_{x\to +\infty} \frac{(x^2\sqrt{x^4+1} - x^4)(x^2\sqrt{x^4+1} + x^4)}{(\sqrt{x^4+x^2\sqrt{x^4+1}} + \sqrt{2x^4})(x^2\sqrt{x^4+1} + x^4)} 
+= \lim\limits_{x\to +\infty} \frac{x^4}{(\sqrt{x^4+x^2\sqrt{x^4+1}} + \sqrt{2x^4})(x^2\sqrt{x^4+1} + x^4)}
+= $$
+
+$$ = \lim\limits_{x\to +\infty} \frac{1}{(\sqrt{x^4+x^2\sqrt{x^4+1}} + \sqrt{2x^4})(\frac{\sqrt{x^4+1}}{x^2} + 1)}
+= \frac{1}{\infty}
+= 0 $$
+
+\endgroup
+\end{document}
