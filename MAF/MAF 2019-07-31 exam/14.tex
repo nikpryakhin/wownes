@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 14} 
+
+\begingroup
+
+\Large
+
+$$ \int x (1+2x^2)^4 \,dx 
+= \begin{vmatrix} u = 1+2x^2 \\ 
+                 du = 4xdx \end{vmatrix}
+= \frac{1}{4} \int u^4 du
+= \frac{1}{4} \times \frac{1}{5} \times u^5
+= \frac{(1+2x^2)^5}{20}$$
+
+\endgroup
+\end{document}

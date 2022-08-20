@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 11} 
+
+\begingroup
+
+\Large
+
+$$ \int_{-1}^{1} xe^{1+x^4}dx 
+= \begin{vmatrix} u = x^2 \\ 
+                 du = 2xdx \end{vmatrix}
+= \frac{1}{2} \int_{-1}^{1} e \times e^{u^2}du 
+= $$
+
+Функция ошибок: $ \erf{x} = \frac{2}{\sqrt{\pi}} \int_{0}^{x} e^{-t^{2}} dt $ или $ erf(ix) = \frac{2}{\sqrt{\pi}} \int_{0}^{x} e^{t^{2}} dt $
+
+Поэтому:
+
+$$ = \frac{\sqrt{\pi}e}{4} \int_{-1}^{1}\frac{2e^{u^2}}{\sqrt{\pi}} du 
+= \frac{\sqrt{\pi}e}{4} erf(ix^2) \bigg\vert_{-1}^{1}
+= \frac{\sqrt{\pi}e}{4} (erf(i1) - erf(i1))
+= 0$$
+
+\endgroup
+\end{document}
