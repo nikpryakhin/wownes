@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 25} 
+
+$$ \int x \sin{x^2} dx 
+= \begin{Vmatrix}  u = x^2 \\
+                  du = 2x \ dx \Leftrightarrow dx = \frac{du}{2x} \end{Vmatrix}
+= \frac{1}{2} \int \sin{u}du
+= - \frac{1}{2} \cos{x^2} + C $$
+
+\end{document}

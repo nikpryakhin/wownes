@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 21} 
+
+$$ \int_{0}^{1} \ln{x} dx $$
+
+$$ \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} =
+   \begin{Vmatrix} f = \ln{x} &  g = x \\
+                  df = \frac{1}{x}dx  & dg = dx \end{Vmatrix} $$
+
+$$ \int_{0}^{1} \ln{x} dx
+= x\ln{x} - \int dx 
+= x(\ln{x} - 1) \bigg\vert_{0}^{1}
+= -1 $$
+
+\end{document}

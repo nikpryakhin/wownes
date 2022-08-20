@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 8} 
+\large
+
+$$ \int_{0}^{2} \left| x(1-x) \right| \ dx $$
+\\
+при $ 0 < x < 1 $ модуль положительный 
+\\
+при $ 1 < x < 2 $ модуль отрицательный
+
+$$ \int_{0}^{1} x(1-x) \ dx - \int_{1}^{2} x(1-x) \ dx 
+= \left( \frac{x^2}{2} - \frac{x^3}{3} \right) \bigg\vert_{0}^{1} + \left( \frac{x^3}{3} - \frac{x^2}{2} \right) \bigg\vert_{1}^{2}
+= \frac{1}{6} + \frac{7}{3} - \frac{3}{2}
+= 1 $$
+
+\end{document}
