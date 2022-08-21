@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 18} 
+\large
+
+$$ \int_{0}^{1} \arctg{\sqrt{x}} \ dx 
+= \begin{vmatrix} u = \sqrt{x} \\
+                 du = \frac{1}{2\sqrt{x}} \ dx \\
+                 dx = 2t \ dt \end{vmatrix} 
+= 2 \int_{0}^{1} u \arctg{u} \ du 
+= $$
+
+$$ \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} =
+   \begin{Vmatrix} f = \arctg{u} & g = u^2 \\
+                  df = \frac{1}{1+u^2}  & dg = 2u \ du \end{Vmatrix} $$
+
+$$ = u \arctg{u} - \int \frac{u^2}{1+u^2}du
+= u \arctg{u} - \int \frac{u^2+1-1}{1+u^2}du
+= u \arctg{u} - \int du \ + \int \frac{1}{1+u^2}du
+= $$
+
+$$ = \left( u \arctg{u} - u + \arctg{u} \right) \bigg\vert_{0}^{1}
+= \left( \arctg{\sqrt{x}}(\sqrt{x}+1) - \sqrt{x} \right) \bigg\vert_{0}^{1} 
+= \frac{\pi}{2} - 1 $$
+
+\end{document}

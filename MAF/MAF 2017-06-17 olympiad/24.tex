@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+
+\begin{document}
+
+\textbf{№ 24} 
+\large
+
+$$ \int_{0}^{1} x \ln{(x+1)} \ dx 
+= \begin{vmatrix} z = x + 1 \\
+                  x = z - 1 \\
+                 dz = dx \end{vmatrix}
+= \int (z-1) \ln{z} \ dz
+= \int z \ln{z}dz \ - \int \ln{z}dz
+= \textcolor{red}{(\star)}$$
+
+\begin{enumerate}
+\item Решаем первый интеграл
+$$ \int z \ln{z} dz
+= \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} =
+  \begin{Vmatrix} f = \ln{z} &  g = \frac{z^2}{2} \\
+                 df = \frac{1}{z} \ dz  & dg = z \ dz \end{Vmatrix} 
+= $$
+
+$$ = \frac{z^2}{2} \ln{z} - \int \frac{z^2}{2} \times \frac{1}{z} \ dz 
+= \frac{z^2}{2} \ln{z} - \frac{1}{2} \int z \ dz 
+= \frac{z^2}{2} \ln{z} - \frac{z^2}{4} $$
+
+\item Решаем второй интеграл (это табличный интеграл)
+$$ \int \ln{z}dz 
+= \begin{Vmatrix} f = \ln{z} &  g = z \\
+                 df = \frac{1}{z} \ dz  & dg = dz \end{Vmatrix} z
+= z \ln{z} - \int z \times \frac{1}{z} \ dz 
+= z \ln{z} - z $$
+
+\item Объединяем решение двух интегралов: вычитаем из первого интеграла второй
+$$ \textcolor{red}{(\star)} = \left( \frac{z^2}{2} \ln{z} - \frac{z^2}{4} - z \ln{z} + z \right) \bigg\vert_{0}^{1}
+= $$
+
+$$ = \left( \frac{(x+1)^2}{2} \ln{(x+1)} - \frac{(x+1)^2}{4} - (x+1) \ln{(x+1)} + (x+1) \right) \bigg\vert_{0}^{1}
+= $$
+
+$$ = \left( 2 \ln{2} - 1 - 2 \ln{2} + 2 - \frac{3}{4} \right) 
+= \frac{1}{4}$$
+
+\end{enumerate}
+\end{document}

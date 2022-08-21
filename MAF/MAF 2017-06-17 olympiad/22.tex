@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 22} 
+\large
+
+$$ \int_{0}^{1} \frac{1}{x^2+3x+2} \ dx 
+= \int_{0}^{1} \frac{1}{(x+1)(x+2)} \ dx 
+= \int_{0}^{1} \left( \frac{1}{x+1} - \frac{1}{x+2} \right) \ dx
+= $$
+
+$$ = \left( \ln{\left| x+1 \right|} - \ln{\left| x+2 \right|} \right) \bigg\vert_{0}^{1}
+= \ln{\frac{\left| x+1 \right|}{\left| x+2 \right|}} \bigg\vert_{0}^{1}
+= \ln{\frac{2}{3}} - \ln{\frac{1}{2}}
+= \frac{4}{3} $$
+
+\end{document}

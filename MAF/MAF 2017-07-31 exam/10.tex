@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 10} 
+\large
+
+$$ \int_{0}^{1} xe^{1-x} \ dx 
+= \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} =
+   \begin{Vmatrix} f = x &  g = -e^{1-x} \\
+                  df = dx  & dg = e^{1-x} \ dx \end{Vmatrix} $$
+
+$$ \int_{0}^{1} xe^{1-x} \ dx
+= -xe^{1-x} + \int e^{1-x} dx 
+= \left( -xe^{1-x} - e^{1-x} \right) \bigg\vert_{0}^{1}
+= $$
+
+$$ = \left( -1 -1 \right) - \left( -e \right)
+= e - 2 $$
+
+\end{document}
