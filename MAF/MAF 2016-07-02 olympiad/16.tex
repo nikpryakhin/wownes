@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 16} 
+\large
+
+$$ \int_{0}^{2} \sqrt{4-x^2} \ dx 
+= \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} 
+= \begin{Vmatrix} f = \sqrt{4-x^2} & g = x \\
+                  df = \frac{-x}{\sqrt{4-x^2}} \ dx  & dg = dx \end{Vmatrix} 
+= $$
+
+$$ = x\sqrt{4-x^2} - \int \frac{-x^2}{\sqrt{4-x^2}} \ dx 
+= x\sqrt{4-x^2} - \int \frac{4-x^2-4}{\sqrt{4-x^2}} \ dx 
+=  $$
+
+$$ = x\sqrt{4-x^2} - \int \frac{4-x^2}{\sqrt{4-x^2}} \ dx + 4 \int \frac{1}{\sqrt{4-x^2}} \ dx
+= $$
+
+$$ = x\sqrt{4-x^2} - \int \frac{(4-x^2)\sqrt{4-x^2}}{4-x^2} \ dx + 4 \arcsin{\frac{x}{2}}
+$$
+
+$$ = x\sqrt{4-x^2} - \int \sqrt{4-x^2} \ dx + 4 \arcsin{\frac{x}{2}}
+$$
+
+Получается следующее: 
+$$ \int \sqrt{4-x^2} \ dx = x\sqrt{4-x^2} - \int \sqrt{4-x^2} \ dx + 4 \arcsin{\frac{x}{2}} $$
+Или
+$$ 2\int \sqrt{4-x^2} \ dx = x\sqrt{4-x^2} + 4 \arcsin{\frac{x}{2}} $$
+Или
+$$ \int \sqrt{4-x^2} \ dx = \frac{1}{2} \left( x\sqrt{4-x^2} + 4 \arcsin{\frac{x}{2}} \right) $$
+Интеграл найден. Вычисляем
+$$ \frac{1}{2} \left( x\sqrt{4-x^2} + 4 \arcsin{\frac{x}{2}} \right) \bigg\vert_{0}^{2} 
+= \left( 0 + 2 \frac{\pi}{2} \right) - \left( 0 - 0 \right) 
+= \pi$$
+
+\end{document}
