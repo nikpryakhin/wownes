@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 18} 
+\large
+
+$$ \int_{0}^{10\pi} \left| \sin{x} + \cos{x} \right| \ dx $$
+Период данного интеграла является $\pi$, поэтому можно переписать
+
+$$ 10 \int_{0}^{\pi} \left| \sin{x} + \cos{x} \right| \ dx $$
+В связи с тем, что под модулем разные знаки: от 0 до $\frac{\pi}{2}$ у $\sin{x}$ (+) \ и у $\cos{x}$ (+),
+а в промежутке от $\frac{\pi}{2}$ до $\pi$ у $\sin{x}$ (+) и у $\cos{x}$ (-), 
+то нужно сменить период с одинаковыми знаками, чтобы раскрыть модуль:
+
+$$ [\frac{3\pi}{4};  \frac{3\pi}{4} + \pi] \ \Rightarrow \ [\frac{3\pi}{4};\frac{7\pi}{4}] $$
+Где знак везде будет отрицательным, поэтому
+
+$$ 10 \int_{\frac{3\pi}{4}}^{\frac{7\pi}{4}} \left| \sin{x} + \cos{x} \right| \ dx 
+= 10 \int_{\frac{3\pi}{4}}^{\frac{7\pi}{4}} \left( - \sin{x} - \cos{x} \right) \ dx 
+= 10 \left( \cos{x} - \sin{x} \right) \bigg\vert_{\frac{3\pi}{4}}^{\frac{7\pi}{4}} 
+= $$
+
+$$ = 10 \left( \left( \cos{\frac{7\pi}{4}} - \cos{\frac{3\pi}{4}} \right) - \left( \sin{\frac{7\pi}{4}} - \sin{\frac{3\pi}{4}} \right) \right)
+= 10\left( \frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2} \right)
+= 20 \sqrt{2} $$
+
+\end{document}
