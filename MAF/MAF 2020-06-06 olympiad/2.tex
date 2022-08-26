@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 2} 
+\large
+
+$$ \lim\limits_{x \to \infty} \left( \sqrt{x+3} - \sqrt{x-1} \right) \sqrt{x}
+= \lim\limits_{x \to \infty} \frac{ \left( \sqrt{x+3} - \sqrt{x-1} \right)  \left( \sqrt{x+3} + \sqrt{x-1} \right) \sqrt{x}}{\left( \sqrt{x+3} + \sqrt{x-1} \right)}
+= $$  
+
+$$ = \lim\limits_{x \to \infty} \frac{ \left( x+3-x+1 \right) \sqrt{x}}{\sqrt{x+3} + \sqrt{x-1}} 
+= 4\lim\limits_{x \to \infty} \frac{ \sqrt{x}}{\sqrt{x+3} + \sqrt{x-1}} 
+= 4\lim\limits_{x \to \infty} \frac{1}{\sqrt{1+\frac{3}{x}} + \sqrt{1-\frac{1}{x}}} 
+= 2 $$
+
+\end{document}

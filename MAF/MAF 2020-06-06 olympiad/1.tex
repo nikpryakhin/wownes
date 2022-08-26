@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 1} 
+\large
+
+$$ \lim\limits_{z \to +\infty} \int_{0}^{z} \sin{(zx)} \ dx
+= \lim\limits_{z \to +\infty} \frac{1}{z} \left( -\cos{(zx)} \right) \bigg\vert_{0}^{z}
+= \lim\limits_{z \to +\infty} \frac{1}{z} \left( -(\cos{z^2} - 1) \right) 
+= \lim\limits_{z \to +\infty} \frac{1 - \cos{z^2}}{z} $$  
+
+В связи с тем, что
+$$ \begin{vmatrix}
+        1 - \cos{z^2} \geq 0 \\
+        1 - \cos{z^2} \leq 2 \\
+        \lim\limits_{z \to +\infty} \frac{1}{z} = 0 
+   \end{vmatrix} $$
+
+Получаем
+
+$$ \lim\limits_{z \to +\infty} \frac{1 - \cos{z^2}}{z}
+= 0 $$
+
+\end{document}
