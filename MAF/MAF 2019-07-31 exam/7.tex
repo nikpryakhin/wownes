@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 7} 
+\large
+
+$$ \lim\limits_{x \to 0} \left( \cos{x} \right)^{\frac{1}{x^3}} 
+= 1^{\infty}
+= e^{\lim\limits_{x \to 0} \ln{\left( \cos{x} \right)}^{\frac{1}{x^3}} } $$  
+
+\begin{enumerate}
+\item Решаем предел для степени (убираем на время e)
+
+$$ \lim\limits_{x \to 0} \ln{\left( \cos{x} \right)}^{\frac{1}{x^3}} 
+= \lim\limits_{x \to 0} \frac{\ln{\cos{x}}}{x^3}
+= \frac{0}{0}
+= \lim\limits_{x \to 0} \frac{-\frac{\sin{x}}{\cos{x}}}{3x^2} 
+= \lim\limits_{x \to 0} - \frac{\sin{x}}{3x^2 \cos{x}} 
+= -\frac{1}{3} \lim\limits_{x \to 0} \frac{x}{3x^2 \cos{x}} 
+= $$
+  
+$$ = -\frac{1}{3} \lim\limits_{x \to 0} \frac{1}{3x \cos{x}}
+\
+\Rightarrow
+\
+\infty $$  
+    
+\item Подставляем в степень e
+$$ e^{\infty} $$
+
+Предела не существует
+    
+\end{enumerate}
+\end{document}

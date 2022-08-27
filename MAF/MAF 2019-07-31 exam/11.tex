@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 11} 
+\large
+
+$$ \lim\limits_{x \to 0} \frac{2^{x^2} - 1}{x - \ln{(x+1)}}
+= \frac{0}{0}
+= \begin{vmatrix}
+        x \to 0 \\
+        b^x - 1 \approx x \ln{b} \\
+        b>0, b \neq 1
+   \end{vmatrix} 
+= \lim\limits_{x \to 0} \frac{x^2\ln{2}}{x - \ln{(x+1)}} 
+= \frac{0}{0}
+= \lim\limits_{x \to 0} \frac{2x\ln{2}}{1 - \frac{1}{x+1}} 
+= \frac{0}{0}
+= $$  
+
+$$ \lim\limits_{x \to 0} \frac{2\ln{2}}{\frac{1}{(x+1)^2}} 
+= 2\ln{2}
+= \ln{4} $$
+
+\end{document}

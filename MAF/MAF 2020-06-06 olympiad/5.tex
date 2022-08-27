@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 5} 
+\large
+
+$$ \lim\limits_{x \to 0} \frac{\sqrt{ax + b} - \frac{2}{3}}{x}
+= \frac{3}{4}, \ a = \ ? \ , \ b = \ ? $$  
+
+$$ \lim\limits_{x \to 0} 
+\frac{\left(\sqrt{ax + b} - \frac{2}{3}\right) \left(\sqrt{ax+b} + \frac{2}{3}\right)}
+{x \left( \sqrt{ax+b} - \frac{2}{3}\right)} 
+= \lim\limits_{x \to 0} \frac{ax + b - \frac{4}{9}}{x \left( \sqrt{ax+b} - \frac{2}{3}\right)} 
+= \frac{3}{4} $$
+
+$$ \lim\limits_{x \to 0} 4 \left( ax + b - \frac{4}{9} \right)
+= \lim\limits_{x \to 0} 3x \left( \sqrt{ax+b} - \frac{2}{3}\right) $$
+
+$$ 4 \left( b - \frac{4}{9} \right) 
+= 0 
+\
+\Rightarrow 
+\
+b = \frac{4}{9} $$
+
+Теперь подставляем b в изначальное уравнение
+
+$$ \lim\limits_{x \to 0} \frac{\sqrt{ax + \frac{4}{9}} - \frac{2}{3}}{x}
+= \frac{0}{0}
+= \lim\limits_{x \to 0} \frac{a}{2\sqrt{ax+\frac{4}{9}}} $$
+
+$$ \lim\limits_{x \to 0} \frac{a}{2\sqrt{ax+\frac{4}{9}}} 
+= \frac{3}{4}
+\
+\Rightarrow 
+\
+\frac{a}{2\sqrt{\frac{4}{9}}}
+= \frac{3}{4} 
+\
+\Rightarrow 
+\
+a = 1
+$$
+
+Итого $ a = 1, b = \frac{4}{9} $
+
+\end{document}

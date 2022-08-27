@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 19} 
+\large
+
+$$ \lim\limits_{x \to +\infty} \left( \frac{x+a}{x-a} \right)^x = e; \ a = ? $$  
+
+\begin{enumerate}
+\item Решаем предел
+
+$$ \lim\limits_{x \to +\infty} \left( \frac{x+a}{x-a} \right)^x
+= \lim\limits_{x \to +\infty} e^{\ln{\left( \frac{x+a}{x-a} \right)^x}} $$
+
+\item Решаем предел только в степени (на время уберем e)
+$$ \lim\limits_{x \to +\infty} \ln{\left( \frac{x+a}{x-a} \right)^x} 
+= \lim\limits_{x \to +\infty} \frac{\ln{\frac{x+a}{x-a}}}{\frac{1}{x}}  
+= \frac{\infty}{\infty}
+= \lim\limits_{x \to +\infty} \frac{ \frac{x-a}{x+a} \left( \frac{(x-a)-(x+a)}{(x-a)^2} \right) }{-\frac{1}{x^2}} 
+= \lim\limits_{x \to +\infty} \frac{2ax^2}{(x+a)(x-a)} 
+= $$
+
+$$ = \lim\limits_{x \to +\infty} \frac{2ax^2}{x^2-a^2}  
+= 2a \lim\limits_{x \to +\infty} \frac{x^2}{x^2 \left(1 - \frac{a^2}{x^2} \right)} 
+= 2a $$
+
+\item Подставляем решение в степень e и приравниваем к изначальному условию
+$$ e^{2a} = e \ \Rightarrow \ a = \frac{1}{2} $$
+
+\end{enumerate}
+\end{document}
