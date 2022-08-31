@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 11} 
+\large
+
+$$ \lim\limits_{x \to 0} \frac{\sin{(1-\cos{x})}}{\ln{(1+\tg{x})}}
+= \begin{vmatrix}
+        x \to 0 \\
+        \log_b(1+x) \approx \frac{x}{\ln{b}} \\
+        \sin{x} \approx x \\
+        1 - \cos{x} \approx \frac{1}{2} \ x^2 \\
+        \tg{x} \approx x
+   \end{vmatrix}
+= \lim\limits_{x \to 0} \frac{1-\cos{x}}{\tg{x}}
+= \lim\limits_{x \to 0} \frac{x^2 \frac{1}{2}}{x}
+= \lim\limits_{x \to 0} \frac{x}{2}
+= 0 $$  
+
+\end{document}

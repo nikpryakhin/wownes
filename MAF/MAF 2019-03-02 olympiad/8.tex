@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 8} 
+
+\begingroup
+\Large
+
+$$ \lim\limits_{x \to 0} \left( \cos{x} \right)^{\frac{1}{x}}
+= e^{\lim\limits_{x \to 0}\frac{\ln{\cos{x}}}{x}}
+= \frac{0}{0}
+= e^{\lim\limits_{x \to 0}\frac{-\sin{x}}{\cos{x}}}
+= e^0
+= 1 $$
+
+\endgroup
+\end{document}
