@@ -14,9 +14,41 @@
 \begingroup
 \Large
 
-$$ \lim\limits_{x \to 0} \frac{\left| x^2+2x-1 \right| - \left| 2x^2-2x+1 \right|}{x^2}
-= \lim\limits_{x \to 0} \frac{-3x^2}{x^2}
-= -3  $$
+$$ \lim\limits_{x \to 0} \frac{\left| x^2+2x-1 \right| - \left| 2x^2-2x+1 \right|}{x^2} 
+= $$
+
+Возможные варианты при раскрытии модуля
+\begin{enumerate}
+\item положительно и положительно
+$$ = \frac{-x^2+4x-2}{x^2}
+= \frac{-2}{0}
+= \infty $$
+
+\item отрицательно и положительно
+$$ = \frac{-3x^2}{x^2}
+= -3 $$
+
+\item положительно и отрицательно
+$$ = \frac{3x^2}{x^2}
+= 3 $$
+
+\item отрицательно и отрицательно
+$$ = \frac{x^2-4x+2}{x^2}
+= \frac{2}{0}
+= \infty $$
+\end{enumerate}
+
+$$ \lim\limits_{x \to 0} \frac{\left| x^2+2x-1 \right| - \left| 2x^2-2x+1 \right|}{x^2} 
+= \frac{0}{0}
+= \frac{\frac{(2x+2)\left( x^2+2x-1 \right)}{\left| x^2+2x-1 \right|} - \frac{(4x-2)\left( 2x^2-2x+1 \right)}{\left| 2x^2-2x+1 \right|}}{2x} 
+= \frac{0}{0}
+= $$
+
+$$ = \frac{1}{2} \left( \frac{2\left( x^2+2x-1 \right) + (2x+2)(2x+2)}{\frac{\left( x^2+2x-1 \right)}{\left| x^2+2x-1 \right|}} - \frac{4\left( 2x^2-2x+1 \right)+(4x-2)(4x-2)}{\frac{\left( 2x^2-2x+1 \right)}{\left| 2x^2-2x+1 \right|}} \right)
+= $$
+
+$$ = \frac{1}{2} \left( \frac{-2+4}{-1} - \frac{4+4}{1} \right)
+= -3 $$
 
 \endgroup
 \end{document}

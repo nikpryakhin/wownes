@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+\textbf{№ 14} 
+
+\begingroup
+
+$$ \lim\limits_{x \to \infty} \frac{(2x-3)^{20}(3x+2)^{30}}{(2n+1)^{50}}
+= \lim\limits_{x \to \infty} \left( \frac{(2x-3)^{2}(3x+2)^{3}}{(2x+1)^{5}} \right)^{10} 
+= \frac{\infty}{\infty}
+= $$
+
+$$ = \lim\limits_{x \to \infty} \left( \frac{4(2x-3)(3x+2)^{3} + 9(2x-3)^{2}(3x+2)^{2}}{10(2x+1)^{4}} \right)^{10}  
+= \lim\limits_{x \to \infty} \left( \frac{(4 \cdot 2x \cdot 27x^3 + ...) + (9 \cdot 4x^2 \cdot 9x^2 + ...)}{10(16x^2 + ...)} \right)^{10} = $$
+
+$$ = \lim\limits_{x \to \infty} \left( \frac{(216x^4 + ...) + (324x^4 + ...)}{10(16x^2 + ...)} \right)^{10} 
+= \left( \frac{540}{16 \cdot 10} \right)^{10}
+= \left( \frac{3^3}{2^3} \right)^{10} 
+= \frac{3^{30}}{2^{30}} $$
+
+\endgroup
+\end{document}

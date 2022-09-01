@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 1} 
+
+\begingroup
+\Large
+
+$$ \lim\limits_{x \to 0} \left( \ln{\frac{1}{x}} \right)^{x}
+= e^{\lim\limits_{x \to 0}\frac{\ln{\frac{1}{x}}}{\frac{1}{x}}} $$
+
+Рассчитаем предел
+$$ \lim\limits_{x \to 0} \frac{\ln{\frac{1}{x}}}{\frac{1}{x}}
+= \frac{\infty}{\infty}
+= \lim\limits_{x \to 0} \frac{ \frac{1}{\frac{1}{x}} \left( -\frac{1}{x^2} \right)}{-\frac{1}{x^2}} 
+= \lim\limits_{x \to 0} x 
+= 0 $$
+
+Подсчтавляем в степерь
+$$ e^{0}
+= 1 $$
+
+\endgroup
+\end{document}
