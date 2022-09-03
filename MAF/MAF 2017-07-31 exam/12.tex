@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 12} 
+
+$$ \lim\limits_{x \to \infty} \left( \sqrt{x^4+x^2+x+1} - \sqrt{x^4+1} \right)
+= \lim\limits_{x \to \infty} \frac{\left( \sqrt{x^4+x^2+x+1} - \sqrt{x^4+1} \right) \left( \sqrt{x^4+x^2+x+1} + \sqrt{x^4+1} \right)}{\left( \sqrt{x^4+x^2+x+1} + \sqrt{x^4+1} \right)}
+= $$
+
+$$ = \lim\limits_{x \to \infty} \frac{x^4+x^2+x+1-x^4-1}{\sqrt{x^4(1+\frac{1}{x^2}+\frac{1}{x^3}+\frac{1}{x^4})} + \sqrt{x^4(1+\frac{1}{x^4})}} 
+= \lim\limits_{x \to \infty} \frac{x^2(1+\frac{1}{x})}{x^2\sqrt{1+\frac{1}{x^2}+\frac{1}{x^3}+\frac{1}{x^4}} + \sqrt{1+\frac{1}{x^4}}} 
+= \frac{1}{2} $$
+
+\end{document}

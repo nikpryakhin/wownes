@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{hyperref}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 17}
+
+$$ \lim\limits_{x\to +\infty} \left( 1 - \frac{\ln{x}}{\ln{(x+1)}} \right) x\ln{x} $$
+
+Необходимо решать через разложения ряд Тейлора:
+
+$$ \frac{1}{\ln{(x+1)}} \approx \frac{1}{x} + \frac{1}{2} - \frac{x}{12} + O\left( x^2 \right), x \to 0 $$
+
+$$ \frac{1}{\ln{(x+1)}} \approx \frac{1}{\ln{x}} - \frac{1}{x\ln^2{x}} + O\left( \frac{1}{x} \right)^2, x \to \infty $$
+
+(подробнее расписать разложения) \\
+Решаем:
+
+$$ \lim\limits_{x\to +\infty} \left( 1 - \ln{x} \left( \frac{1}{\ln{x}} - \frac{1}{x\ln^2{x}} \right)  \right) x\ln{x} 
+= \lim\limits_{x\to +\infty} \left( 1 - 1 + \frac{1}{x\ln{x}} \right) x\ln{x} 
+= 1 $$
+
+\end{document}

@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 12} 
+\large
+\\
+см. MAF 2018-06-16 olympiad № 12 \\
+см. MAF 2020-02-29 olympiad № 19
+
+$$ \lim\limits_{x \to \infty} \left( \frac{x+a}{x-a} \right)^{3x} = e^3; \ a = ? $$  
+
+\begin{enumerate}
+\item Решаем предел
+
+$$ \lim\limits_{x \to \infty} \left( \frac{x+a}{x-a} \right)^{3x}
+= \lim\limits_{x \to \infty} e^{3\ln{\left( \frac{x+a}{x-a} \right)^x}} $$
+
+\item Решаем предел только в степени (на время уберем e)
+$$ \lim\limits_{x \to \infty} 3\ln{\left( \frac{x+a}{x-a} \right)^x} 
+= \lim\limits_{x \to \infty} 3\frac{\ln{\frac{x+a}{x-a}}}{\frac{1}{x}}  
+= \frac{\infty}{\infty}
+= \lim\limits_{x \to \infty} 3\frac{ \frac{x-a}{x+a} \left( \frac{(x-a)-(x+a)}{(x-a)^2} \right) }{-\frac{1}{x^2}} 
+= \lim\limits_{x \to \infty} 3\frac{2ax^2}{(x+a)(x-a)} 
+= $$
+
+$$ = \lim\limits_{x \to \infty} \frac{6ax^2}{x^2-a^2}  
+= 6a \lim\limits_{x \to \infty} \frac{x^2}{x^2 \left(1 - \frac{a^2}{x^2} \right)} 
+= 6a $$
+
+\item Подставляем решение в степень e и приравниваем к изначальному условию
+$$ e^{6a} = e^3 \ \Rightarrow \ a = \frac{1}{2} $$
+
+\end{enumerate}
+\end{document}

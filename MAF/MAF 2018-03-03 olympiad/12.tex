@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 12} 
+\\
+см. MAF 2020-06-06 olympiad № 5 \\
+см. MAF 2018-03-03 olympiad № 12
+
+$$ \lim\limits_{x \to 0} \frac{\sqrt{ax + b} - 2}{x}
+= 1, \ a = \ ? \ , \ b = \ ? $$  
+
+$$ \lim\limits_{x \to 0} \frac{\sqrt{ax + b} - 2}{x}
+= \lim\limits_{x \to 0} \frac{\left( \sqrt{ax + b} - 2 \right) \left( \sqrt{ax + b} + 2 \right)}{x\left( \sqrt{ax + b} + 2 \right)} 
+= \lim\limits_{x \to 0} \frac{ax+b-4}{x\left( \sqrt{ax + b} + 2 \right)} 
+= 1 $$
+
+$$ \Rightarrow ax+b-4 = x(\sqrt{ax+b}+2), \ x \to 0 $$
+$$ \Rightarrow b-4 = 0  \Rightarrow b = 4$$
+
+Подставляем $ b = 4 $ в первоначальное выражение и решаем его
+
+$$ \lim\limits_{x \to 0} \frac{\sqrt{ax + 4} - 2}{x} 
+= \frac{0}{0} 
+= \lim\limits_{x \to 0} \frac{\frac{a}{2\sqrt{ax+4}} - 0}{1} 
+= 1 $$
+
+$$ \Rightarrow \frac{a}{2\sqrt{ax+4}} = 1, \ x \to 0 $$
+$$ \Rightarrow a = 2\sqrt{ax+4} \ \Rightarrow a = 4 $$
+
+Итого
+$$ a = 4, \ b = 4 $$
+
+\end{document}
