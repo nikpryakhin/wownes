@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+\textbf{№ 8} 
+
+$$ \lim\limits_{x \to +\infty} \left(\sqrt{x+\sqrt{x+\sqrt{x}}} - \sqrt{x} \right)
+= \lim\limits_{x \to +\infty} \frac{\left(\sqrt{x+\sqrt{x+\sqrt{x}}} - \sqrt{x} \right) \left(\sqrt{x+\sqrt{x+\sqrt{x}}} + \sqrt{x} \right)}{\left(\sqrt{x+\sqrt{x+\sqrt{x}}} + \sqrt{x} \right)}
+= $$
+
+$$ = \lim\limits_{x \to +\infty} \frac{\sqrt{x+\sqrt{x}}}{\left( \sqrt{x+\sqrt{x+\sqrt{x}}} + \sqrt{x} \right)}
+= \lim\limits_{x \to +\infty} \sqrt{\frac{x+\sqrt{x}}{\left( \sqrt{x+\sqrt{x+\sqrt{x}}} + \sqrt{x} \right)^2}}
+= $$
+
+$$ = \lim\limits_{x \to +\infty} \underbrace{\sqrt{\frac{\sqrt{x}}{\left( \sqrt{x+\sqrt{x+\sqrt{x}}} + \sqrt{x} \right)^2}}}_{0} + \lim\limits_{x \to +\infty} \sqrt{\frac{x}{\left( \sqrt{x+\sqrt{x+\sqrt{x}}} + \sqrt{x} \right)^2}}
+= $$
+
+$$ = \lim\limits_{x \to +\infty} \sqrt{\frac{x}{x\left( \frac{\sqrt{x+\sqrt{x+\sqrt{x}}}}{\sqrt{x}} + 1 \right)^2}}
+= \lim\limits_{x \to +\infty} \sqrt{\frac{1}{\left( 1 + \underbrace{\frac{\sqrt{x+\sqrt{x}}}{x}}_{0} + 1 \right)^2}}
+= \sqrt{\frac{1}{(1+1)^2}} 
+= \frac{1}{2} $$
+
+\end{document}

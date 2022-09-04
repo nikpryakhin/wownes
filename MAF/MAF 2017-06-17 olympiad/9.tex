@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+\textbf{№ 9} 
+
+$$ \lim\limits_{x \to 0} \frac{\sqrt[m]{1-mx}-\sqrt[n]{1-nx}}{x^2}
+= \frac{0}{0}
+= \lim\limits_{x \to 0} \frac{(1-mx)^{\frac{1}{m}-1}\cdot(-m)\cdot\frac{1}{m} - (1-nx)^{\frac{1}{n}-1}\cdot(-n)\cdot\frac{1}{n}}{2x} 
+= $$
+
+$$ = \lim\limits_{x \to 0} \frac{(1-nx)^{\frac{1}{n}-1} - (1-mx)^{\frac{1}{m}-1}}{2x} 
+= \lim\limits_{x \to 0} \frac{\frac{(1-nx)^{\frac{1}{n}}}{(1-nx)} - \frac{(1-mx)^{\frac{1}{m}}}{(1-mx)}}{2x} 
+= \lim\limits_{x \to 0} \frac{(1-nx)^{\frac{1}{n}}(1-mx) - (1-mx)^{\frac{1}{m}}(1-nx)}{2x(1-mx)(1-nx)} 
+= $$
+
+$$ = \frac{1}{2} \cdot \underbrace{\lim\limits_{x \to 0} \frac{1}{(1-mx)(1-nx)}}_{1} \cdot \lim\limits_{x \to 0} \left( \frac{(1-nx)^{\frac{1}{n}}}{x} - \underbrace{\frac{mx(1-nx)^{\frac{1}{n}}}{x}}_{m} - \frac{(1-mx)^{\frac{1}{m}}}{x} + \underbrace{\frac{nx(1-mx)^{\frac{1}{m}}}{x}}_{n} \right)
+= $$
+
+$$ = \frac{1}{2} \left( (n-m) + \lim\limits_{x \to 0} \frac{(1-nx)^{\frac{1}{n}} - (1-mx)^{\frac{1}{m}}}{x} \right)
+= \frac{0}{0} 
+= $$
+
+$$ = \frac{1}{2} \left( (n-m) + \lim\limits_{x \to 0} \frac{(1-nx)^{\frac{1}{n}-1}\cdot(-n)\cdot\frac{1}{n} - (1-mx)^{\frac{1}{m}-1}\cdot(-m)\cdot\frac{1}{m}}{1} \right) 
+= $$
+
+$$ = \frac{1}{2} \left( (n-m) + \lim\limits_{x \to 0} \underbrace{\left( \frac{(1-mx)^{\frac{1}{m}}}{(1-mx)} - \frac{(1-nx)^{\frac{1}{n}}}{(1-nx)} \right)}_{0} \right)
+= \frac{n-m}{2} $$
+
+\end{document}

@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+\textbf{№ 14} 
+
+
+$$ \lim\limits_{k \to 0+} \int_{k}^{1} (\ln{x})^2 \ dx 
+= \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} =
+  \begin{Vmatrix} f = (\ln{x})^2 &  g = x \\
+                 df = \frac{2\ln{x}}{x} \ dx  & dg = dx \end{Vmatrix} 
+= $$
+
+\begin{enumerate}
+\item Решаем интеграл
+$$ = x\ln^2{x} - 2\int \ln{x} \ dx 
+= \left( x\ln^2{x} - 2(x\ln{x}-x) \right) \bigg\vert_{k}^{1} 
+= \left( (0-0+2) - (k\ln{k}-2k\ln{k}+2k) \right) $$
+
+\item Решаем предел
+$$ \lim\limits_{k \to 0+} \left( (0-0+2) - (k\ln{k}-2k\ln{k}+2k) \right)
+= (2 - 0 - 0 - 0)
+= 2 $$
+
+\item Подробнее расписать, почему $\lim\limits_{k \to 0+} k\ln{k}-2k\ln{k} = 0 $
+
+\end{enumerate}
+\end{document}

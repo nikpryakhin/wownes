@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+\textbf{№ 9}
+\Large
+
+$$ \lim\limits_{k \to +\infty} k \int_{-k}^{1+k} \frac{1}{1+x^2+k^2} \ dx $$
+
+\begin{enumerate}
+\item Решаем интеграл
+$$ \int_{-k}^{1+k} \frac{1}{1+x^2+k^2} \ dx
+= \frac{\arctg{\frac{x}{\sqrt{1+k^2}}}}{\sqrt{1+k^2}} \bigg\vert_{-k}^{1+k} 
+= \frac{\arctg{\frac{1+k}{\sqrt{1+k^2}}}}{\sqrt{1+k^2}} - \frac{\arctg{\frac{-k}{\sqrt{1+k^2}}}}{\sqrt{1+k^2}} $$
+
+\item Решаем предел
+$$ \lim\limits_{k \to +\infty} k \left( \frac{\arctg{\frac{1+k}{\sqrt{1+k^2}}}}{\sqrt{1+k^2}} - \frac{\arctg{\frac{-k}{\sqrt{1+k^2}}}}{\sqrt{1+k^2}} \right) 
+= \lim\limits_{k \to +\infty} k \left( \frac{\arctg{\frac{1+k}{\sqrt{1+k^2}}} + \arctg{\frac{k}{\sqrt{1+k^2}}}}{k\sqrt{1+\frac{1}{k^2}}} \right) 
+= $$
+
+$$ =  \lim\limits_{k \to +\infty} \left( \arctg{\frac{1+k}{\sqrt{1+k^2}}} + \arctg{\frac{k}{\sqrt{1+k^2}}} \right) 
+= \arctg{1} + \arctg{1} 
+= \frac{\pi}{4} + \frac{\pi}{4}
+= \frac{\pi}{2} $$
+
+\end{enumerate}
+\end{document}

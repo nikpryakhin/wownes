@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+\textbf{№ 1} 
+
+$$ \lim\limits_{n \to \infty} \frac{1}{n+1} \int_{0}^{n} \arctg{x} \ dx $$
+
+\begin{enumerate}
+\item Решаем интеграл
+$$ \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} =
+  \begin{Vmatrix} f = \arctg{x} &  g = x \\
+                 df = \frac{1}{1+x^2} \ dx  & dg = dx \end{Vmatrix} 
+= x\arctg{x} - \int \frac{x}{x^2+1} \ dx
+= \begin{vmatrix} u = x^2+1 \\
+                 du = 2x \ dx \\
+                 dx = \frac{du}{2x} \end{vmatrix} 
+= $$
+
+$$ = x\arctg{x} - \frac{1}{2} \int \frac{1}{u} \ du
+= \left( x\arctg{x} - \frac{1}{2}\cdot\ln{(x^2+1)} \right) \bigg\vert_{0}^{n} 
+= n\arctg{n} - \frac{1}{2}\cdot\ln{(n^2+1)} - 0 $$
+
+\item Решаем предел
+$$ \lim\limits_{n \to \infty} \frac{n\arctg{n} - \frac{1}{2}\cdot\ln{(n^2+1)}}{n+1} 
+= \lim\limits_{n \to \infty} \frac{n \left( \arctg{n} - \frac{\frac{1}{2}\cdot\ln{(n^2+1)}}{n} \right)}{n(1+\frac{1}{n})} 
+= \lim\limits_{n \to \infty} \arctg{n}
+= \frac{\pi}{2} $$
+
+\end{enumerate}
+\end{document}
