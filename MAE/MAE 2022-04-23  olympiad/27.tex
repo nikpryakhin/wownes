@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 27} 
+\\
+см. также {\color{blue}MAF} 2020-02-29 № 12 \\
+см. также {\color{blue}MAF} 2022-03-12 № 19\\
+см. также {\color{red}MAE} 2022-04-23 № 27
+
+$$ \int_{0}^{2} \frac{5}{x^2-3x-4} dx 
+= 5\int_{0}^{2} \frac{1}{(x-4)(x+1)} dx $$
+
+\begin{enumerate}
+\item Разбиваем подынтегральное выражение на части
+
+$$\frac{1}{(x-4)(x+1)}
+= \frac{A}{x-4} + \frac{B}{x+1} 
+= \frac{A(x+1)+B(x-4)}{(x-4)(x+1)} 
+= \frac{Ax+A+Bx-4B}{(x-4)(x+1)}$$
+
+$$ Ax+A+Bx-4B = 1 $$
+
+$$
+\left\{
+  \begin{array}{ccc}
+    Ax + Bx = 0 \\
+    A - 4B = 0 \\
+  \end{array}
+\right  
+    \Leftrightarrow
+\left\{
+  \begin{array}{ccc}
+    A = -B \\
+    -5B = 1 \\
+  \end{array}
+\right
+    \Leftrightarrow
+\left\{
+  \begin{array}{ccc}
+    A = \frac{1}{5} \\
+    B = -\frac{1}{5} \\
+  \end{array}
+ \right.
+$$
+
+$$ 5\int_{0}^{2} \frac{1}{(x-4)(x+1)} dx 
+= 5 \left( \frac{1}{5} \int_{0}^{2} \frac{1}{x-4} dx - \frac{1}{5} \int_{0}^{2} \frac{1}{x+1} dx \right) 
+= \int_{0}^{2} \frac{1}{x-4} dx - \int_{0}^{2} \frac{1}{x+1} dx $$
+
+\item Решаем первый интеграл
+$$ \int_{0}^{2} \frac{1}{x-4} dx
+= \int_{0}^{2} \frac{1}{u} du 
+= \ln{\left| u \right|} \bigg\vert_{0}^{2} 
+= \ln{\left| x-4 \right|} \bigg\vert_{0}^{2} 
+= \left( \ln{2} - \ln{4} \right)
+= \ln{\frac{1}{2}} $$
+
+\item Решаем второй интеграл
+$$  \int_{0}^{2} \frac{1}{x+1} dx
+= \int_{0}^{2} \frac{1}{u} du 
+= \ln{\left| u \right|} \bigg\vert_{0}^{2} 
+= \ln{\left| x+1 \right|} \bigg\vert_{0}^{2} 
+= \left( \ln{3} - \ln{1} \right)
+= \ln{3} $$
+
+\item вычитаем первый интеграл из второго
+$$ \ln{\frac{1}{2}} - \ln{3} 
+= \ln{\frac{1}{6}} 
+= - \ln{6}$$
+
+\end{enumerate}
+\end{document}

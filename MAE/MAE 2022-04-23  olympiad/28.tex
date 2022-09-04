@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 28} 
+\\
+\\
+Небходимо построить график функции $\arctg{x}$ и $\frac{\pi}{4}x^2$, чтобы понимать, где ищем площадь (здесь должен быть нарисован график). Далее находим точки пересечений. Это 0 и 1
+$$ S = \int_{0}^{1} \left( \arctg{x}-\frac{\pi}{4}x^2 \right) dx $$
+
+\begin{enumerate}
+\item Решаем первый интеграл
+$$ \int \arctg{x}
+= \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} 
+= \begin{Vmatrix} f = \arctg{x} &  g = x \\
+                 df = \frac{1}{1+x^2}dx  & dg = dx \end{Vmatrix} 
+= x\arctg{x} - \int \frac{x}{1+x^2} dx 
+= $$
+
+$$ = \begin{vmatrix} u = 1+x^2 \\
+                    du = 2x \ dx \\
+                    dx = \frac{du}{2x} \end{vmatrix} 
+= x\arctg{x} - \frac{1}{2} \int \frac{du}{u}
+= \left( x\arctg{x} - \frac{1}{2} \ln{(1+x^2)} \right) \bigg\vert_{0}^{1}
+= \frac{\pi}{4} - \frac{1}{2} \ln{2} $$
+
+\item Решаем второй интеграл
+$$ \int \frac{\pi}{4}x^2 
+= \left( \frac{\pi}{4} \frac{x^3}{3} \right) \bigg\vert_{0}^{1} 
+= \frac{\pi}{12} $$
+
+\item вычитаем из первого интеграла второй
+$$ \frac{\pi}{4} - \frac{1}{2} \ln{2} - \frac{\pi}{12}
+= \frac{\pi}{6} - \frac{1}{2} \ln{2} $$
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 30} 
+\\
+см. также {\color{red}MAE} 2022-04-23 olympiad № 30 \\
+см. также {\color{blue}MAF} 2020-07-31 exam № 15
+
+$$ \int_{1}^{2} \frac{\ln{x}}{x^2} dx 
+= \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} 
+= \begin{Vmatrix} f = \ln{x} &  g = -\frac{1}{x} \\
+                 df = \frac{1}{x}dx  & dg = \frac{1}{x^2} dx \end{Vmatrix} 
+= -\frac{1}{x} \ln{x} - \int \left( -\frac{1}{x} \right) \cdot \frac{1}{x} dx 
+= $$
+
+$$ = -\frac{\ln{x}}{x} + \int\frac{1}{x^2} dx 
+= \left( -\frac{\ln{x}}{x} - \frac{1}{x} \right) \bigg\vert_{1}^{2} 
+= \frac{-\ln{2}-1}{2} - \frac{-\ln{1}-1}{1}
+= \frac{1-\ln{2}}{2}$$
+
+\end{document}
