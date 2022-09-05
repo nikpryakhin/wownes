@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 23} 
+
+$$ \int_{0}^{2} \frac{1}{x^2+2x+4} dx 
+= \int_{0}^{2} \frac{1}{(x+1)^2+3} dx 
+= \begin{vmatrix} u = x+1 \\
+                 du = dx \end{vmatrix} 
+= \int_{0}^{2} \frac{1}{u^2+3} du 
+= \frac{1}{\sqrt{3}} \arctg{\frac{x+1}{\sqrt{3}}} \bigg\vert_{0}^{2} 
+= $$
+
+$$ = \frac{1}{\sqrt{3}} \arctg{\sqrt{3}} - \frac{1}{\sqrt{3}} \arctg{\frac{\sqrt{3}}{3}}
+= \frac{1}{\sqrt{3}} \cdot \frac{\pi}{3} - \frac{1}{\sqrt{3}} \cdot \frac{\pi}{6} 
+= \frac{1}{\sqrt{3}} \cdot \frac{\pi}{6} $$
+
+\end{document}

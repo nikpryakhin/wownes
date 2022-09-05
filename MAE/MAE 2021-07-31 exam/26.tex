@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 26} 
+\Large
+\\
+\\
+(необходимо нарисовать два данных графика и показать пересечение) \\
+$ y = \ctg{x}, \ y = \tg{x}, \ x = \frac{\pi}{12}, \ x = \frac{\pi}{4} $
+
+$$ S 
+= \int_{\frac{\pi}{12}}^{\frac{\pi}{4}} \left( \ctg{x} - \tg{x} \right)dx $$
+
+\begin{enumerate}
+\item Решаем первый интеграл
+$$ \int \ctg{x} dx 
+= \int \frac{\cos{x}}{\sin{x}}dx
+= \begin{vmatrix} u = \sin{x} \\
+                 du = \cos{x} dx \end{vmatrix}
+= \int \frac{1}{u}du
+= \ln{\left| \sin{x} \right|} $$
+
+\item Решаем второй интеграл
+$$ \int \tg{x} dx 
+= \int \frac{\sin{x}}{\cos{x}}dx
+= \begin{vmatrix} u = \cos{x} \\
+                 du = -\sin{x} dx \end{vmatrix}
+= -\int \frac{1}{u}du
+= -\ln{\left| \cos{x} \right|} $$
+
+\item Вычитаем первый интеграл из второго
+$$ S = \left( \ln{\left| \sin{x} \right|} + \ln{\left| \cos{x} \right|} \right) \bigg\vert_{\frac{\pi}{12}}^{\frac{\pi}{4}} 
+= \ln{ \frac{\left| \sin{(2x)} \right|}{2} } \bigg\vert_{\frac{\pi}{12}}^{\frac{\pi}{4}} 
+= \ln{\frac{\sin{\frac{\pi}{2}}}{2}} - \ln{\frac{\sin{\frac{\pi}{6}}}{2}} 
+= \ln{2} $$
+
+\end{enumerate}
+
+\end{document}

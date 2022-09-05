@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 15} 
+
+$$ \int_{0}^{1} e^{-\sqrt{x}} dx 
+= \begin{vmatrix} u = -\sqrt{x} \\
+                 du = -\frac{1}{2\sqrt{x}} \ dx \end{vmatrix} 
+= 2\int_{0}^{1} u \cdot e^{u} \cdot du 
+= $$
+
+$$ \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} =
+   \begin{Vmatrix} f = u &  g = -e^{u} \\
+                  df = du & dg = e^{u} \ dx \end{Vmatrix} $$
+
+$$ = 2 \left( u \cdot e^{u} - \int e^{u} du \right)
+= 2 \left( u \cdot e^{u} - e^{u} \right) \bigg\vert_{0}^{1} 
+= 2 \left( -\sqrt{x} \cdot e^{-\sqrt{x}} - e^{-\sqrt{x}} \right) \bigg\vert_{0}^{1}
+= 2 - \frac{4}{e} $$
+
+\end{document}

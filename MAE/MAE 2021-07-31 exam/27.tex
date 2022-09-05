@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 27} 
+\\
+\\
+(необходимо нарисовать два данных графика и показать пересечение) \\
+$ y_1 = x^2-c^2, \ y_2 = c^2-x^3, \ c>0, \ S_{y_1y_2}=72, \ c=? $
+
+$$ S_{y_1y_2}
+= 72
+= \int \left( c^2-x^2-x^2+c^2- \right)dx 
+= 2\left( \int c^2dx - \int x^2dx \right)
+= 2xc^2 - \frac{2x^3}{3} $$
+
+$$ 72 = 2xc^2 - \frac{2x^3}{3} $$
+$$ 36 = xc^2 - \frac{x^3}{3} $$
+$$ c^2 = \frac{36}{x} - \frac{x^2}{3} = \frac{108-x^3}{3x}, \ x=3 $$
+$$ c^2 = 12 - 3 = 9$$
+$$ c = 3 $$
+
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 24} 
+
+$$ \int_{1}^{5} \frac{1}{x^2-13x+30} dx 
+= \int_{1}^{5} \frac{1}{(x-10)(x-3)} dx $$
+
+\begin{enumerate}
+\item Разбиваем подынтегральное выражение на части
+
+$$\frac{1}{(x-10)(x-3)}
+= \frac{A}{x-10} + \frac{B}{x-3} 
+= \frac{A(x-3)+B(x-10)}{(x-10)(x-3)} 
+= \frac{Ax-3A+Bx-10B}{(x-10)(x-3)} $$
+
+$$ Ax-3A+Bx-10B = 1 $$
+
+$$
+\left\{
+  \begin{array}{ccc}
+    Ax+Bx = 0 \\
+    -3A-10B = 1 \\
+  \end{array}
+\right  
+    \Leftrightarrow
+\left\{
+  \begin{array}{ccc}
+    A = -B \\
+    -7B = 1 \\
+  \end{array}
+\right
+    \Leftrightarrow
+\left\{
+  \begin{array}{ccc}
+    A = \frac{1}{7} \\
+    B = -\frac{1}{7} \\
+  \end{array}
+ \right.
+$$
+
+\item Решаем интегралs
+$$ \int_{1}^{5} \frac{1}{(x-10)(x-3)} dx
+= \frac{1}{7} \int_{1}^{5} \frac{1}{x-10} dx - \frac{1}{7} \int_{1}^{5} \frac{1}{x-3} dx 
+= \frac{1}{7} \ln{\left| x-10 \right|} \bigg\vert_{1}^{5} - \frac{1}{7} \ln{\left| x-3 \right|} \bigg\vert_{1}^{5} 
+= \frac{1}{7} \ln{\left| \frac{x-10}{x-3} \right|} \bigg\vert_{1}^{5}
+= $$
+
+$$ = \frac{1}{7} \left( \ln{\frac{5}{2}} - \ln{\frac{9}{2}} \right) 
+= \frac{1}{7} \ln{\frac{5}{9}} $$
+
+\end{enumerate}
+\end{document}

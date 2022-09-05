@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 28} 
+
+$$ \int_{0}^{\frac{\pi}{2}} \frac{\cos{x}-\sin{x}}{\cos{x}+\sin{x}} dx 
+= \begin{vmatrix} u = \cos{x}+\sin{x} \\
+                 du = -(\sin{x}+\cos{x}) \ dx \end{vmatrix} 
+= \int_{0}^{\frac{\pi}{2}} \frac{1}{u}du
+= \ln{\left| u \right|} \bigg\vert_{0}^{\frac{\pi}{2}} 
+= \ln{\left| \cos{x}+\sin{x} \right|} \bigg\vert_{0}^{\frac{\pi}{2}}
+= 0 $$
+
+\end{document}

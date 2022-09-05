@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 23} 
+
+$$ \int \frac{1}{x^4+4x^2} dx 
+= \int \frac{1}{x^2(x^2+4)} dx $$
+
+\begin{enumerate}
+\item Разбиваем подынтегральное выражение на части
+
+$$\frac{1}{x^2(x^2+4)}
+= \frac{A}{x^2} + \frac{B}{x^2+4} 
+= \frac{A(x^2+4)+Bx^2}{x^2(x^2+4)} 
+= \frac{Ax^2+4A+Bx^2}{x^2(x^2+4)}$$
+
+$$ Ax^2+4A+Bx^2 = 1 $$
+
+$$
+\left\{
+  \begin{array}{ccc}
+    Ax^2+Bx^2 = 0 \\
+    4A = 1 \\
+  \end{array}
+\right  
+    \Leftrightarrow
+\left\{
+  \begin{array}{ccc}
+    A = -B \\
+    A = \frac{1}{4} \\
+  \end{array}
+\right
+    \Leftrightarrow
+\left\{
+  \begin{array}{ccc}
+    A = \frac{1}{4} \\
+    B = -\frac{1}{4} \\
+  \end{array}
+ \right.
+$$
+
+\item Решаем интеграл
+$$ \int \frac{1}{x^2(x^2+4)} dx 
+= \left( \frac{1}{4} \int \frac{1}{x^2} dx - \frac{1}{4} \int \frac{1}{x^2+4} dx \right) 
+= -\frac{1}{4} \cdot \frac{1}{x} - \frac{1}{4} \cdot \frac{1}{2} \cdot \arctg{\frac{x}{2}}
+= -\frac{1}{4x} - \frac{1}{8} \arctg{\frac{x}{2}} $$
+
+\end{enumerate}
+\end{document}
