@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 13} 
+\\
+см. также {\color{red}MAE} 2021-06-26 olympiad № 3
+\\
+$$ \int_{-1}^{1} (4x^2-1)\sqrt{1-x^2} dx 
+= \int_{-1}^{1} 4x^2\sqrt{1-x^2} dx - \int_{-1}^{1} \sqrt{1-x^2} dx $$
+
+\begin{enumerate}
+\item Решаем первый интеграл
+$$ 4\int_{-1}^{1} x^2\sqrt{1-x^2} dx
+= \begin{vmatrix} x = \sin{u} \\
+                 dx = \cos{u} du \\
+                  u = \aricsin{x}\end{vmatrix} 
+= 4\int_{-1}^{1} \sin^2{u}\sqrt{1-\sin^2{u}} \cdot \cos{u} du 
+= 4\int_{-1}^{1} \sin^2{u} \cdot \cos^2{u} du $$
+
+$$ = 4 \left( \int_{-1}^{1} \sin^2{u} du - \int_{-1}^{1} \sin^4{u} du \right)
+= 4 \left( A - B \right) $$
+\\
+Формула понижения степени интеграла $\sin{k}$
+$$ \int \sin^{n}{k}dk
+= \frac{n-1}{n} \int \sin^{n-2}{k}dk + \frac{\cos{k} \cdot \sin^{n-1}{k}}{n} $$
+
+\begin{itemize}
+\item Решаем первый интеграл
+$$ A 
+= \int \sin^2{u} du 
+= -\frac{\cos{u} \cdot \sin{u}}{2} + \frac{1}{2} \int 1du
+= \frac{u}{2} - \frac{\cos{u} \cdot \sin{u}}{2} $$
+
+\item Решаем второй интеграл
+$$ B
+= \int \sin^4{u} du 
+= -\frac{\cos{u} \cdot \sin^3{u}}{4} + \frac{3}{4} \int \sin^2{u} du
+= -\frac{\cos{u} \cdot \sin^3{u}}{4} + \frac{3}{4} \left( \frac{u}{2} - \frac{\cos{u} \cdot \sin{u}}{2} \right) $$
+
+\item Вычитаем из первого интеграла второй
+$$ 4 \left( A - B \right)
+= 4 \left( \frac{u}{2} - \frac{\cos{u} \cdot \sin{u}}{2} + \frac{\cos{u} \cdot \sin^3{u}}{4} + \frac{3u}{8} + \frac{3 \cos{u} \cdot \sin{u}}{8} \right)
+= $$
+
+$$ = \frac{\cos{u} \cdot \sin^3{u}}{4} + \frac{\cos{u} \cdot \sin{u}}{8} + \frac{u}{8}
+= \frac{\arcsin{x}}{8} + \frac{x^3\sqrt{1-x^2}}{4} - \frac{x\sqrt{1-x^2}}{8} $$
+\end{itemize}
+
+
+\item Решаем второй интеграл
+$$ \int \sqrt{1-x^2} dx
+= \int \cos^2{k} dk
+= \left( \frac{\cos{k}\sin{k}}{2} + \frac{1}{2} \int 1 \cdot dk \right)
+= \left( \frac{\cos{k}\sin{k}}{2} + \frac{k}{2} \right) 
+= \frac{\arcsin{u}}{2} + \frac{x\sqrt{1-x^2}}{2} $$
+
+\item Вычитаем из первого интеграла второй
+$$ \left( x^3\sqrt{1-x^2} - x\sqrt{1-x^2} \right) \bigg\vert_{-1}^{1} 
+= 0 $$
+
+\end{enumerate}
+\end{document}

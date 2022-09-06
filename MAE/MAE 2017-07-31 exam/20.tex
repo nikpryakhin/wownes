@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 20} 
+
+$$ \int_{0}^{1} x^2e^{-x} dx 
+= \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} 
+= \begin{Vmatrix} f = x^2 &  g = -e^{-x} \\
+                 df = 2xdx  & dg = e^{-x} dx \end{Vmatrix} 
+= -x^2 \cdot e^{-x} - \int \left( -e^{-x} \right) 2x dx 
+= $$
+
+$$ = -x^2 \cdot e^{-x} + 2\int xe^{-x} dx
+= \begin{Vmatrix} f = x &  g = -e^{-x} \\
+                 df = dx  & dg = e^{-x} dx \end{Vmatrix} 
+= \left( -x^2 \cdot e^{-x} + 2 \left( e^{-x}(-x) - e^{-x} \right) \right) \bigg\vert_{0}^{1}
+= $$
+
+$$ = \left( -\frac{1}{e} + 2 \left(-\frac{1}{e} - \frac{1}{e} \right) \right) - \left( -2 \right)
+= 2-\frac{5}{e} $$
+
+\end{document}

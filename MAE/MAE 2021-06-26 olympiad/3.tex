@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 3} 
+\\
+см. также {\color{red}MAE} 2017-07-31 exam № 13
+
+$$ \int_{0}^{2} \sqrt{x-\frac{x^2}{2}} dx 
+= \frac{1}{\sqrt{2}} \int_{0}^{2} \sqrt{2x-x^2} dx 
+= \frac{1}{\sqrt{2}} \int_{0}^{2} \sqrt{1 - (x-1)^2} dx 
+= \begin{vmatrix} u = x - 1 \\
+                 du = dx \end{vmatrix} 
+= \frac{1}{\sqrt{2}} \int_{0}^{2} \sqrt{1 - u^2} du 
+= $$
+
+$$ = \begin{vmatrix} u = \sin{k} \\
+                    du = \cos{k}dk \\
+                     k = \arcsin{u}\end{vmatrix} 
+= \frac{1}{\sqrt{2}} \int_{0}^{2} \cos{k} \sqrt{1 - \sin^2{k}} dk 
+= \frac{1}{\sqrt{2}} \int_{0}^{2} \cos^2{k} dk $$
+\\
+\\
+Формула понижения степени интеграла $\cos{k}$
+$$ \int \cos^{n}{k}dk
+= \frac{n-1}{n} \int \cos^{n-2}{k}dk + \frac{\cos^{n-1}{k} \cdot \sin{k}}{n}$$
+\\
+\\
+Решаем
+$$ \frac{1}{\sqrt{2}} \int_{0}^{2} \cos^2{k} dk
+= \frac{1}{\sqrt{2}} \left( \frac{\cos{k}\sin{k}}{2} + \frac{1}{2} \int 1 \cdot dk \right)
+= \frac{1}{\sqrt{2}} \left( \frac{\cos{k}\sin{k}}{2} + \frac{k}{2} \right) 
+= $$
+
+$$ = \frac{1}{\sqrt{2}} \left( \frac{\cos{(\arcsin{u})}\sin{(\arcsin{u})}}{2} + \frac{(\arcsin{u})}{2} \right)
+= \begin{vmatrix} \sin{(\arcsin{u})} = u \\
+                  \cos{(\arcsin{u})} = \sqrt{1-\sin^2{(\arcsin{u})}} = \sqrt{1-u^2} \end{vmatrix} 
+= $$
+
+$$ = \frac{(x-1)\sqrt{1-(x-1)^2} + \arcsin{(x-1)}}{2\sqrt{2}} \bigg\vert_{0}^{2} 
+= \left( \frac{1\sqrt{0} + \frac{\pi}{2}}{2\sqrt{2}} \right) - \left( \frac{=1\sqrt{0} - \frac{\pi}{2}}{2\sqrt{2}} \right) 
+= \frac{\pi}{2\sqrt{2}} $$
+
+\end{document}

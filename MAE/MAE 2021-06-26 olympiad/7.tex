@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 7} 
+
+$$ \int_{1}^{2} x\ln^2{x} dx 
+= \begin{Vmatrix} \int f \,dg = fg - \int g \ df \end{Vmatrix} 
+= \begin{Vmatrix} f = \ln^2{x} &  g = \frac{x^2}{2} \\
+                 df = \frac{2\ln{x}}{x}dx  & dg = x dx \end{Vmatrix} 
+= \ln^2{(x)} \cdot \frac{x^2}{2} - \int \frac{x^2}{2} \cdot \frac{2\ln{x}}{x} dx 
+= $$
+
+$$ = \ln^2{(x)} \cdot \frac{x^2}{2} - \int x\ln{x} dx 
+= \begin{Vmatrix} f = \ln{x} &  g = \frac{x^2}{2} \\
+                 df = \frac{1}{x}dx  & dg = x dx \end{Vmatrix} 
+= \ln^2{(x)} \cdot \frac{x^2}{2} - \ln{(x)} \cdot \frac{x^2}{2} - \frac{1}{2} \int x dx
+= $$
+
+$$ = \left( \ln^2{(x)} \cdot \frac{x^2}{2} - \ln{(x)} \cdot \frac{x^2}{2} - \frac{1}{2} \cdot \frac{x^2}{2}  \right) \bigg\vert_{1}^{2}
+= \left( 2\ln^2{2} - 2\ln{2} + 1 \right) - \left( 0 - 0 + \frac{1}{4} \right)
+= 2\ln^2{2} - 2\ln{2} + \frac{3}{4} $$
+
+\end{document}
