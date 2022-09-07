@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 3} 
+
+\begin{enumerate}
+\item Раскладываем интеграл
+$$ \int_{1}^{2} \frac{x+3}{3x^2-x^3} dx $$
+
+$$\frac{x+3}{3x^2-x^3}
+=-\frac{x+3}{x^2(x-3)}
+= \frac{A}{x} + \frac{B}{x^2} + \frac{C}{x-3} 
+= \frac{x^2(A+C)+x(B-3A)-3B}{x^2(x-3)} $$
+
+$$ x^2(A+C)+x(B-3A)-3B = x+3 $$
+
+$$
+\left\{
+  \begin{array}{ccc}
+    -3B = 3 \\
+    B-3A = 1 \\
+    C+A = 0
+  \end{array}
+\right.  
+    \Leftrightarrow
+\left\{
+  \begin{array}{ccc}
+    A = -\frac{2}{3} \\
+    B = -1 \\
+    C = \frac{2}{3}
+  \end{array}
+\right. 
+$$
+
+\item Решаем нтегралы
+$$ -\int_{1}^{2} \left( -\frac{2}{3x} - \frac{1}{x^2} + \frac{2}{3(x-3)} \right) dx  
+= \frac{2}{3}\int_{1}^{2} \frac{1}{x}dx + \int_{1}^{2}\frac{1}{x^2} - \frac{2}{3}\int_{1}^{2}\frac{1}{x-3} dx
+= $$
+
+$$ = \left( \frac{2}{3} \ln{\left| x \right|} - \frac{1}{x} - \frac{2}{3}\ln{\left| x-3 \right|} \right) \bigg\vert_{1}^{2}
+= \left( \frac{2}{3} \ln{2} - \frac{1}{2} - \frac{2}{3}\ln{1} \right) - \left( \frac{2}{3} \ln{1} - \frac{1}{1} - \frac{2}{3}\ln{2} \right)
+= \frac{4}{3} \ln{2} + \frac{1}{2} $$
+
+\end{enumerate}
+\end{document}

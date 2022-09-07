@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 8} 
+\Large
+
+$$ \int_{-x}^{x} e^{-\frac{x^2+t^2}{2}} dt, \ f'(0) = ? $$
+
+Функция ошибок Гаусса
+$$ erf(x) = \frac{2}{\sqrt{\pi}} \int_{0}^{x} e^{-t^2}dt, \ \ erf(-x) = -erf(x) $$
+
+Решаем
+$$ \int_{-x}^{x} e^{-\frac{x^2+t^2}{2}} dt
+= \begin{vmatrix} u = \frac{t}{\sqrt{2}} & t = u\sqrt{2} \\
+                 du = \frac{1}{\sqrt{2}}dt & dt = \sqrt{2}du \end{vmatrix} 
+= \int_{-x}^{x} \sqrt{2} e^{-\frac{x^2+2u^2}{2}} du 
+= $$
+
+$$ = \frac{\sqrt{\pi}}{\sqrt{\pi}} \cdot \frac{\sqrt{2}}{\sqrt{2}} \int_{-x}^{x} \sqrt{2} e^{-\frac{x^2}{2}} \cdot e^{u^2} du 
+= \frac{e^{-\frac{x^2}{2}} \sqrt{\pi}}{\sqrt{2}} \int_{-x}^{x} \frac{2}{\sqrt{\pi}} \cdot e^{u^2} du 
+= \frac{e^{-\frac{x^2}{2}} \sqrt{\pi}}{\sqrt{2}} erf(u) \bigg\vert_{-x}^{x} 
+= $$
+
+$$ = \frac{e^{-\frac{x^2}{2}} \sqrt{\pi}}{\sqrt{2}} erf(\frac{t}{\sqrt{2}}) \bigg\vert_{-x}^{x} 
+= \frac{e^{-\frac{x^2}{2}} \sqrt{\pi}}{\sqrt{2}} \left( erf(\frac{x}{\sqrt{2}}) - erf(-\frac{x}{\sqrt{2}}) \right)  
+= $$
+
+$$ = \frac{e^{-\frac{x^2}{2}} \sqrt{\pi}}{\sqrt{2}} \cdot 2 \cdot erf(\frac{x}{\sqrt{2}}) 
+= \frac{ \sqrt{\pi}}{\sqrt{2}} \cdot 2 \left( e^{-\frac{x^2}{2}} erf(\frac{x}{\sqrt{2}}) \right)' 
+= $$
+\\
+Производная
+$$ (erf(x))' 
+= \frac{2}{\sqrt{\pi}} e^{-x^2} $$
+
+Решаем
+$$ = \frac{2 \sqrt{\pi}}{\sqrt{2}} \left( e^{-\frac{x^2}{2}} (-\frac{2x}{2}) erf(\frac{x}{\sqrt{2}}) + e^{-\frac{x^2}{2}} \sqrt{\frac{2}{\pi}} e^{-x^2} \right) 
+= \frac{2 \sqrt{\pi}}{\sqrt{2}} \left( 0 + 1 \sqrt{\frac{2}{\pi}} \right)
+= 2 $$
+
+\end{document}

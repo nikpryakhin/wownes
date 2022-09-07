@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 30} 
+
+$$ \int \cos^3{x} dx
+= \int (1-\sin^2{x})\cos{x}dx
+= \begin{vmatrix} u = \sin{x} \\
+                 du = \cos{x}dx \end{vmatrix} 
+= \int (1-u^2)du
+= \int 1du - \int u^2du
+= $$
+
+$$ = u - \frac{u^3}{3}
+= \sin{x} - \frac{\sin^3{x}}{3}$$
+
+\end{document}

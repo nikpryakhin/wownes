@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 10} 
+
+$$ \int_{0}^{\frac{\pi}{2}} (\cos^2{x}+\sin{x}-1) dx 
+= \int_{0}^{\frac{\pi}{2}} (\sin{x}-\sin^2{x}) dx 
+= \begin{vmatrix} \sin^2{x} = \frac{1-\cos{(2x)}}{2} \end{vmatrix}
+= $$
+
+$$ = \int_{0}^{\frac{\pi}{2}} \left( \sin{x}dx - \frac{1}{2}dx + \frac{1}{2} \cos{(2x)}dx \right) dx 
+= \left( -\cos{x} - \frac{x}{2} + \frac{1}{4} \sin{(2x)} \right) \bigg\vert_{0}^{\frac{\pi}{2}} 
+= (0-\frac{\pi}{4}-0)-(0+0-1)
+= 1 - \frac{\pi}{4} $$
+
+\end{document}

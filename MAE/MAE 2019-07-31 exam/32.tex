@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 32} 
+
+$$ \int_{0}^{1} \frac{1}{1+e^{x}} dx 
+= \begin{vmatrix} u = 1 + e^x \\
+                e^x = u - 1 \\
+                 du = e^{x}dx \end{vmatrix} 
+= \int \frac{1}{ue^{x}} du
+= \int \frac{1}{u(u-1)} du 
+= \int \frac{1}{u^2(1 - \frac{1}{u})} du 
+= \begin{vmatrix} z = 1 - \frac{1}{u} \\
+                 dz = \frac{1}{u^2}du \\
+                 du = e^{x}dx \end{vmatrix} 
+= $$
+
+$$ = \int \frac{1}{z} dz
+= \ln{z} \bigg\vert_{0}^{1} 
+= \ln{(1-\frac{1}{u})} \bigg\vert_{0}^{1} 
+= \ln{(1-\frac{1}{1+e^x})} \bigg\vert_{0}^{1}
+= \ln{(1-\frac{1}{1+e})} - \ln{\frac{1}{2}} 
+= \ln{\frac{2e}{1+e}} $$
+
+\end{document}

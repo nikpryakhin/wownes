@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 11} 
+
+$$ \int_{e}^{e^2} \frac{1}{x\ln{x}} dx 
+= \begin{vmatrix} u = \ln{x} \\
+                 du = \frac{1}{x}dx \end{vmatrix}
+= \int_{e}^{e^2} \frac{1}{u}du 
+= \ln{u} \bigg\vert_{e}^{e^2} 
+= \ln{\ln{x}} \bigg\vert_{e}^{e^2} 
+= \ln{2} - 0
+= \ln{2} $$
+
+
+\end{document}

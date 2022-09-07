@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 22} 
+
+$$ \int_{x+1}^{x^2} e^{-t^2} dt
+= \frac{\sqrt{\pi}}{2} erf(t) \bigg\vert_{x+1}^{x^2}
+= \frac{\sqrt{\pi}}{2} \left( erf(x^2) - erf(x+1)  \right) $$
+
+Необходимо нарисовать 4 графика и знать функцию ошибок: \\
+1. $erf(x^2) - erf(x+1)$ \\
+2. $erf(x)$ \\
+3. $erf(x^2)$ \\
+4. $erf(x+1)$
+
+\end{document}
