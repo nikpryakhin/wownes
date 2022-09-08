@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 23} 
+\\
+\\ см. также {\color{red}MAE} 2022-06-25 olympiad № 30
+\\ см. также {\color{red}MAE} 2021-04-24 olympiad № 23
+
+$$ \int \frac{1}{x^2+6x+12} dx 
+= \int \frac{1}{(x+3)^2+3} dx 
+= \begin{vmatrix} u = x+3 \\
+                 du = dx \end{vmatrix} 
+= \int \frac{1}{u^2+3} du 
+= \frac{1}{\sqrt{3}} \arctg{\frac{x+3}{\sqrt{3}}}
+= \frac{1}{\sqrt{3}} \arctg{\left( \frac{x}{\sqrt{3}} + \sqrt{3} \right)} $$
+
+\end{document}

@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 28} 
+
+$$ f(x) = \int_{x}^{x^2} y\sqrt{1+y} dy, \ \ f'(2) = ? $$ 
+
+$$ f(x)
+= \int_{x}^{x^2} y\sqrt{1+y} dy
+= \begin{vmatrix} z = 1+y \\
+                 dz = dy \end{vmatrix}
+= \int_{x}^{x^2} (z-1) \sqrt{z} dz
+= \int_{x}^{x^2} \left( z^{\frac{3}{2}} - z^{\frac{1}{2}} \right)
+= \left( \frac{2}{5} z^{\frac{5}{2}} - \frac{2}{3} z^{\frac{3}{2}} \right) \bigg\vert_{x}^{x^2} 
+= $$
+
+$$ = \left( \frac{2}{5} (1+y)^{\frac{5}{2}} - \frac{2}{3} (1+y)^{\frac{3}{2}} \right) \bigg\vert_{x}^{x^2} 
+= \left( \frac{2}{5} (1+x^2)^{\frac{5}{2}} - \frac{2}{3} (1+x^2)^{\frac{3}{2}} \right) - \left( \frac{2}{5} (1+x)^{\frac{5}{2}} - \frac{2}{3} (1+x)^{\frac{3}{2}} \right) $$
+
+$$ f'(x) 
+= \left( \frac{2}{5} \cdot \frac{5}{2} \cdot (1+x^2)^{\frac{3}{2}} \cdot 2x - \frac{2}{3} \cdot \frac{3}{2} \cdot (1+x^2)^{\frac{3}{2} \cdot }2x \right) - \left( \frac{2}{5} \cdot \frac{5}{2} \cdot (1+x)^{\frac{5}{2}} - \frac{2}{3} \cdot \frac{3}{2} \cdot (1+x)^{\frac{3}{2}} \right) $$
+
+$$ f'(2)
+= \left( 4(1+4)^{\frac{3}{2}} - 4(1+4)^{\frac{3}{2}} \right) - \left( (1+2)^{\frac{5}{2}} - (1+2)^{\frac{3}{2}} \right) 
+= 4\sqrt{5^3} - 4\sqrt{5} - \left( \sqrt{3^3} - \sqrt{3} \right) 
+= 16\sqrt{5} - 2\sqrt{3} $$
+
+\end{document}
