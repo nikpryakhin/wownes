@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 12} 
+
+$$ \lim\limits_{x\to \infty} \int_{0}^{n} \frac{(2+n)^n}{(1+x^2)n^n}dx
+= \lim\limits_{x\to \infty} \frac{(2+n)^n}{n^n} \int_{0}^{n} \frac{1}{1+x^2}dx
+= \lim\limits_{x\to \infty} \frac{(2+n)^n}{n^n} \arctg{x} \bigg\vert_{0}^{n} 
+= \lim\limits_{x\to \infty} \left( \frac{2+n}{n} \right)^n \underbrace{\arctg{n}}_{\frac{\pi}{2}}
+= $$
+
+$$ = \frac{\pi}{2} \lim\limits_{x\to \infty} \left( 1 + \frac{2}{n} \right)^n 
+= \frac{\pi}{2} e^2 $$
+
+\end{document}

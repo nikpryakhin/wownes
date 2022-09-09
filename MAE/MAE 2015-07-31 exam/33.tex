@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 33}
+\Large
+
+$$ \lim\limits_{x\to 0} \frac{(1-\sin{x})^{\ln{(x^2+1)}}-1}{x^3} $$
+
+\begin{enumerate}
+\item Упрощаем $\ln{(x^2+1)}$
+$$ \lim\limits_{x\to 0} \ln{(x^2+1)} 
+= \lim\limits_{x\to 0} \ln{(x^2+1)^{x^2 \cdot \frac{1}{x^2}}} 
+= \ln{e^{x^2}}
+= x^2 $$
+
+\item Упрощаем $ (1-\sin{x})^{\ln{(x^2+1)}} $
+$$ \lim\limits_{x\to 0} (1-\sin{x})^{\ln{(x^2+1)}} 
+= \lim\limits_{x\to 0} (1-\sin{x})^{x^2} 
+= \lim\limits_{x\to 0} (1-\sin{x})^{x^2} 
+= e^{-x^2\sin{x}} $$
+
+\item Объединяем
+$$ \lim\limits_{x\to 0} \frac{(1-\sin{x})^{\ln{(x^2+1)}}-1}{x^3} 
+= \lim\limits_{x\to 0} \frac{e^{-x^2\sin{x}}-1}{x^3} 
+= \lim\limits_{x\to 0} \frac{\frac{1}{e^{\frac{x^3\sin{x}}{x}}}-1}{x^3} 
+= $$
+
+$$ = \lim\limits_{x\to 0} \frac{\frac{1}{e^{x^3}}-1}{x^3}
+= \lim\limits_{x\to 0} \frac{1-e^{x^3}}{x^3e^{x^3}}
+= \lim\limits_{x\to 0} \frac{1-e^{x^3}}{x^3}
+= \begin{vmatrix} x \to 0 \\
+                  \lim\limits_{x\to 0} \frac{a^x-1}{x} = \ln{a} \end{vmatrix}
+= -\ln{e}
+= -1 $$
+
+\end{enumerate}
+\end{document}

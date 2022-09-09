@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 23} 
+
+$$ \lim\limits_{x\to \pi} \left( \pi-x\right) \ctg{x}
+= \lim\limits_{x\to \pi} \frac{(\pi-x)\cos{x}}{\sin{x}}
+= \frac{0}{0}
+= \lim\limits_{x\to \pi} \frac{-\sin{x}(\pi-x)+\cos{x}(-1)}{\cos{x}} 
+= \lim\limits_{x\to \pi} \left( -\frac{(\pi-x)\sin{x}}{\cos{x}} - 1 \right)
+= -1 $$
+
+\end{document}

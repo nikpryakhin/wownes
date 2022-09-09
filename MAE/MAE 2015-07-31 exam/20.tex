@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{xcolor}
+
+\begin{document}
+\textbf{№ 20} 
+
+$$ \lim\limits_{x\to \pi} \frac{\sin{(mx)}}{\sin{(nx)}}
+= \frac{0}{0}
+= \frac{m}{n} \lim\limits_{x\to \pi} \frac{\cos{(mx)}}{\cos{(nx)}}
+= \begin{vmatrix} 1: & m<n \ (m=1, \ n=2) & = -1 \\
+                  2: & m=n \ (m=1, \ n=1) & = 1 \\
+                  3: & m>n \ (m=2, \ n=1) & = -1 \end{vmatrix} 
+\Rightarrow (-1)^{m-n} 
+= \frac{m}{n} (-1)^{m-n} $$
+
+\end{document}
